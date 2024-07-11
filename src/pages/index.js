@@ -22,7 +22,5 @@ const donationsPopup = new DonationsPopup(".donation__popup", donationRenderer);
 const sectionWhy = new Section(whyRenderer, ".why__gallery");
 const sectionDonations = new Section(donationRenderer, ".donations__gallery");
 
-// FORMS
-const donateForm = document.querySelector(".donation__form");
-
-// FUNCTIONS
+// CLASS METHOD CALLS
+donationsPopup.setEventListeners();
