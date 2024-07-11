@@ -31,8 +31,58 @@
             <p class="why_text">Reason Why3</p>
           </article>
         </section>
-        <section class="charities">
-          <p class="charities_text">Charities</p>
+        <section class="charities" id="charities">
+          <h2 class="charities__heading">Charities By Cause</h2>
+          <form class="charities__form">
+            <!-- <div class="charities__form-field">
+              <input
+                class="charities__input"
+                name="city"
+                type="text"
+                id="charities-city"
+                placeholder="Where are you?"
+                minlength="1"
+                maxlength="30"
+                required
+              />
+            </div> -->
+            <div class="charities__radio-button">
+              <input
+                class="charities__radio-button-choice"
+                type="radio"
+                name="cause"
+                id="veterans"
+                value="veterans"
+              />
+              <label for="veterans">veterans</label>
+            </div>
+            <div class="charities__radio-button">
+              <input
+                class="charities__radio-button-choice"
+                type="radio"
+                name="cause"
+                id="housing"
+                value="housing"
+              />
+              <label for="housing">housing</label>
+            </div>
+            <div class="charities__radio-button">
+              <input
+                class="charities__radio-button-choice"
+                type="radio"
+                name="cause"
+                id="youth"
+                value="youth"
+              />
+              <label for="youth">youth</label>
+            </div>
+            <button class="charities__button" type="submit" aria-label="submit">
+              Check
+            </button>
+          </form>
+          <div class="charities__container">
+            <p class="charities__info">This is where the text will go</p>
+          </div>
         </section>
         <section class="donations">
           <p class="donations_text">Donations</p>
