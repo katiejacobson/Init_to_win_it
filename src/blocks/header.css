@@ -4,8 +4,10 @@
   background-color: teal;
 }
 .nav_items{
-flex-direction: column;
-color: aqua;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style: none;
 }
 /* .header_item{
    
