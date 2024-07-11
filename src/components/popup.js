@@ -2,6 +2,7 @@ export default class popup{
 constructor({popup}){
     this._popupElement = document.querySelector(popupSelector);
     this._popupCloseButton = this._popupElement.querySelector('close_popup')
+    this._donationButton= this._donationButton.querySelector("donations")
 }
 
 
@@ -20,7 +21,7 @@ _closeByEscape=(evt)=>{
     }
 }
 setEventListeners(){
-    this._popupElement.addEventListener("click",(evt)=>{
+    this._donationButton.addEventListener("click",(evt)=>{
         if(evt.target === this._popupCloseButton || evt.target=== this._popupElement){
             this.close();
         }
