@@ -2,8 +2,6 @@
   display: flex;
   justify-content: center;
   background-color: aquamarine;
-  min-height: 1000px;
-  width: 100%;
 }
 
 .page_content {
