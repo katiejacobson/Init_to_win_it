@@ -1,3 +1,11 @@
 .donations {
   height: 300px;
 }
+/* .donate_button{
+
+} */
+ .donation_popup{
+  max-width: 430px;
+  max-height: 530px;
+  background-color: #fff;
+ }

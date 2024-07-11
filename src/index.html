@@ -9,7 +9,7 @@
     <div class="page__content">
       <header class="header">
         Init to Win it
-        <ul class="nav_items">
+        <ul class="nav__items">
           <li class="header__item">Mission Statement</li>
           <li class="header__item">Why Donate</li>
           <li class="header__item">Donate</li>
@@ -21,17 +21,75 @@
           <p class="content__statment">We Believe in helping those in need</p>
         </section>
         <section class="why">
-          <p class="why__text">Reason Why1</p>
-          <ul class="why__gallery"></ul>
+          <article class="why__reason">
+            <p class="why__text">Reason Why1</p>
+          </article>
+          <article class="why_reason">
+            <p class="why__text">Reason Why2</p>
+          </article>
+          <article class="why_reason">
+            <p class="why__text">Reason Why3</p>
+          </article>
         </section>
         <section class="charities">
           <p class="charities__text">Charities</p>
         </section>
         <section class="donations">
+          <p class="donations__text">Donations</p>
+          <button class="donate__button" type="button"> Donate here</button>
           <ul class="donations__gallery"></ul>
-          <p class="donations_text">Donations</p>
-          <button class="donate__button" type="button">Donate here</button>
         </section>
+        <div class="donation__popup" id="">
+          <div class=" popup__container">
+            <button>
+            </button>
+            <form class="donation__form">
+              <h1>Donate to the Charity of your choice</h1>
+              <label class="popup__label">
+                <input 
+                type="text" 
+                id="" class="donation__form_input"
+                placeholder="Name"
+                name="name"
+                required
+                minlength="1"
+                maxlength="25"/>
+              </label>
+              <label class="popup__label">
+                <input 
+                type="url" 
+                id="" class="donation__form_input"
+                placeholder="Image"
+                type="url"
+                name="link"
+                required
+                minlength="1"
+                maxlength="25"/>
+              </label>
+              <label class="popup__label">
+                <input 
+                type="text" 
+                id="" class="donation__form_input"
+                placeholder="Charity"
+                name="charity"
+                required
+                minlength="1"
+                maxlength="25"/>
+              </label>
+              <label class="popup__label">
+                <input 
+                type="text" 
+                id=""
+                 class="donation__form_input"
+                placeholder="Donation"
+                name="text"
+                required
+                minlength="1"
+                maxlength="25"/>
+              </label>
+            </form>
+          </div>
+        </div>
         <template id="card__template">
           <li class="card">
             <img src="" alt="" class="card__image" />
