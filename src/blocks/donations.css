@@ -1,4 +1,4 @@
-.donation {
+.donation__popup {
  position: fixed;
  top: 0;
  left:0;
@@ -9,7 +9,7 @@
  align-items: center;
  justify-content: center; 
  padding:0;
- visibility: hidden;
+ /* visibility: hidden; */
  display: flex;
  opacity: 0;
 
