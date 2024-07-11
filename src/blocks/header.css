@@ -4,9 +4,9 @@
   background-color: teal;
 }
 .nav_items{
-flex-direction: row;
+flex-direction: column;
 color: aqua;
 }
-.header_items{
-  flex-direction: column;
-}
+/* .header_item{
+   
+} */

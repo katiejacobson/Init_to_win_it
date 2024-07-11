@@ -3,3 +3,9 @@
   flex-direction: column;
   background-color: blanchedalmond;
 }
+.content_background{
+background-image: url(../images/ramon-kagie-iSwzfjgD3uU-unsplash\ \(1\).jpg);
+}
+.content_statement{
+color: #fff;
+}
