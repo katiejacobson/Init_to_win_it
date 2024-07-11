@@ -1,11 +1,33 @@
-.donations {
-  height: 300px;
+.donation {
+ position: fixed;
+ top: 0;
+ left:0;
+ bottom:0;
+ right:0;
+ background-color: #fff;
+ z-index: 999;
+ align-items: center;
+ justify-content: center; 
+ padding:0;
+ visibility: hidden;
+ display: flex;
+ opacity: 0;
+
 }
 /* .donate_button{
 
 } */
- .donation_popup{
+ .donation__form{
   max-width: 430px;
   max-height: 530px;
   background-color: #fff;
+ }
+ .donation__text{
+
+ }
+ .donation__form{
+
+ }
+ .open__popup{
+  visibility: visible;
  }

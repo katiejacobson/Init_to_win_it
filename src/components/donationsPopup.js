@@ -21,7 +21,6 @@ close(){
 setEventListeners(){
     this._donationForm.addEventListener('submit',(evt)=>{
         evt.preventDefault();
-       
         const inputValues = this._getInputValues 
         this._formSubmit(inputValues);
       })
