@@ -1,0 +1,11 @@
+.page {
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
+}
+
+.page_content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
