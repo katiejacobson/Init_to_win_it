@@ -3,3 +3,10 @@
   height: 150px;
   background-color: teal;
 }
+.nav_items{
+flex-direction: row;
+color: aqua;
+}
+.header_items{
+  flex-direction: column;
+}
