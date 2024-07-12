@@ -1,0 +1,11 @@
+.donation-card {
+  background-color: slategray;
+  height: 300px;
+  width: 300px;
+}
+
+.donation-card__image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}

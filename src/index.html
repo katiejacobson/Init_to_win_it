@@ -123,6 +123,7 @@
             <template id="donation-card__template">
               <li class="donation-card">
                 <p class="donation-card__name"></p>
+                <p class="donation-card__charity"></p>
                 <p class="donation-card__description"></p>
                 <img src="" alt="" class="donation-card__image" />
               </li>
@@ -147,6 +148,18 @@
               class="donation-form__input"
               placeholder="Name"
               name="name"
+              required
+              minlength="1"
+              maxlength="25"
+            />
+          </div>
+          <div class="donation-form__label">
+            <input
+              type="text"
+              id=""
+              class="donation-form__input"
+              placeholder="Who will you donate to?"
+              name="charity"
               required
               minlength="1"
               maxlength="25"
