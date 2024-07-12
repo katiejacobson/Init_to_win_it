@@ -1,5 +1,5 @@
 import Popup from "./Popup.js"
-export default class DonationsPopup extends popup{
+export default class DonationsPopup extends Popup{
     constructor(popupSelector, formSubmit){
     super({popupSelector});
     this._donationForm = this._popupElement.querySelector(".donation__form")
