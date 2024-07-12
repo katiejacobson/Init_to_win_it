@@ -1,19 +1,10 @@
 // IMPORTS
 import Card from "../components/Card.js";
 import Section from "../components/Section.js";
-
-
-import Donations from "../components/Donations.js";
-import "../pages/index.css";
-
-
-import Api from "../components/api.js";
-import Charities from "../components/charities.js";
-import CharityCard from "../components/CharityCard.js";
-
 import DonationsPopup from "../components/DonationsPopup.js";
-
-
+import Api from "../components/api.js";
+import Charities from "../components/Charities.js";
+import "../pages/index.css";
 
 // const api = new Api({
 //   baseUrl: "https://api.charityapi.org",
@@ -24,8 +15,6 @@ import DonationsPopup from "../components/DonationsPopup.js";
 //   },
 // });
 
-const cardTemplate =
-  document.querySelector("#card__template").content.firstElementChild;
 const donateButton = document.querySelector(".donate__button");
 
 const api = new Api({
@@ -33,22 +22,22 @@ const api = new Api({
   apiKey: "pk_live_51295acbffe33d27ac313b33feb97d63",
 });
 
-// const charityForm = new Charities(".charities", handleCharityFormSubmit);
-// charityForm.setEventListeners();
+const charityForm = new Charities(".charities", handleCharityFormSubmit);
+charityForm.setEventListeners();
 
 function handleCharityFormSubmit(data) {
   api
     .getInfo(data)
     .then((res) => {
-      createCharityCard(res.nonprofits[2]);
+      console.log(res.nonprofits[0]);
+      console.log(res.nonprofits[1]);
     })
     .catch(console.error);
 }
 
-
-
 // CLASS INSTANTATION
-
+const cardTemplate =
+  document.querySelector("#card__template").content.firstElementChild;
 const createCard = (cardData) => {
   const newCard = new Card(cardData, cardTemplate);
   return newCard.createCard();
@@ -72,5 +61,8 @@ function donateButtonHandler() {
 donationsPopup.setEventListeners();
 
 // EVENT LISTENERS
-donateButton.addEventListener("click", donateButtonHandler);
-
+// donateButton.addEventListener("click", donateButtonHandler);
+donateButton.addEventListener("click",()=>{
+  donationsPopup.open();
+  });
+  
