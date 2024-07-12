@@ -107,12 +107,15 @@
           <button class=".charities__button"></button>
         </section>
 
-
-        <!-- Donation card Modal -->
-        <section class="donation__modal">
-          <!-- <p class="donations__text">Donations</p> -->
-           <div class="donation__popup_container">
-            <button class="donate__button" type="button" id="donations">
+        <!-- Donation Section-->
+        <section class="donations">
+          <h2 class="donations__heading">Donations</h2>
+          <p class="donations__text">
+            To help people beat the summer heat, what items can you donate to
+            help out? Do you have extra resusable water bottles, light-weight
+            clothing, food that will keep like granola bars, or sunscreen?
+          </p>
+          <button class="donate__button" type="button" id="donations">
             Donate here
           </button>
           <form class="donation__form">
@@ -165,7 +168,9 @@
                 maxlength="25"
               />
             </label>
-            <button type="submit" class="donate__submit_button">Submit here</button>
+            <button type="submit" class="donate__submit_button">
+              Submit here
+            </button>
           </form>
           <ul class="donations__gallery"></ul>
         </section>
@@ -183,17 +188,25 @@
       </main>
       <footer class="footer">
         <h2 class="footer__text">About Us</h2>
-        <div class = "footer__container">
-        <template id="footer-card-template">
-          <li class="footer-card">
-            <h2 class="footer-card__name"></h2>
-            <img class = "footer-card__image" src = "" alt = ""/>
-            <a href = "" class = "footer-card__link" target = "_blank">
-              <img class="footer-card__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png?20210220164014" alt="linked-in logo" /></a>
-              <img class="footer-card__logo" src="./images/linkedin-logo.jpeg" alt="linked-in logo" />
-          </li>
-        </template>
-      </div>
+        <div class="footer__container">
+          <template id="footer-card-template">
+            <li class="footer-card">
+              <h2 class="footer-card__name"></h2>
+              <img class="footer-card__image" src="" alt="" />
+              <a href="" class="footer-card__link" target="_blank">
+                <img
+                  class="footer-card__logo"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png?20210220164014"
+                  alt="linked-in logo"
+              /></a>
+              <img
+                class="footer-card__logo"
+                src="./images/linkedin-logo.jpeg"
+                alt="linked-in logo"
+              />
+            </li>
+          </template>
+        </div>
       </footer>
     </div>
   </body>
