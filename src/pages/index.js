@@ -61,8 +61,8 @@ function donateButtonHandler() {
 donationsPopup.setEventListeners();
 
 // EVENT LISTENERS
-// donateButton.addEventListener("click", donateButtonHandler);
-donateButton.addEventListener("click",()=>{
-  donationsPopup.open();
-  });
+donateButton.addEventListener("click", donateButtonHandler);
+// donateButton.addEventListener("click",()=>{
+//   donationsPopup.open();
+//   });
   
