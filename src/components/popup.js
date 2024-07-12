@@ -17,11 +17,10 @@ export default class popup {
   close() {
     this._popupElement.classList.remove("donation__popup_opened");
     document.removeEventListener("keydown", this._closeByEscape);
-  } 
+  }
 
   setEventListeners() {
     this._popupElement.addEventListener("click", (evt) => {
-
       if (
         evt.target === this._popupCloseButton ||
         evt.target === this._popupElement
