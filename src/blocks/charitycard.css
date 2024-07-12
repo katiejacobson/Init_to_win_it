@@ -13,8 +13,8 @@
 }
 
 .charity-card {
-  max-width: 250px;
-  max-height: 230px;
+  /* max-width: 250px;
+  max-height: 230px; */
   flex-direction: row;
   list-style-type: none;
   margin: 0 auto;
@@ -22,6 +22,17 @@
   background: #ffffff;
   border: black;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 300px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  max-width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 2rem;
 }
 
 
@@ -32,13 +43,16 @@
   margin-left: 10px;
   margin-right: 10px;
   color: rgb(0, 156, 156);
+  text-align: center;
 }
 
 .charity-card__location {
   font-size: 14px;
   line-height: 1.2;
+  text-align: center;
 }
 
 .charitiy-card__url {
   font-size: 14px;
+  text-align: center;
 }
