@@ -23,8 +23,8 @@ import { coderInfo } from "../utils/constants.js";
 //   },
 // });
 
-const cardTemplate =
-  document.querySelector("#card__template").content.firstElementChild;
+// const cardTemplate =
+//   document.querySelector("#card__template").content.firstElementChild;
 
 const donateButton = document.querySelector(".donate__button");
 
