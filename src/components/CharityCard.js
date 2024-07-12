@@ -6,8 +6,6 @@ export default class CharityCard {
     this._logoUrl = data.logoUrl;
     this._location = data.location;
     this._cardSelector = cardSelector;
-    console.log(data);
-    console.log(data.logoUrl);
   }
 
   _getTemplate() {
@@ -25,10 +23,9 @@ export default class CharityCard {
     this._element.querySelector(".charity-card__name").textContent = this._name;
     this._element.querySelector(".charity-card__location").textContent =
       this._location;
-    this._element.querySelector(".charity-card__logo").src = this._logoUrl;
-    this._element.querySelector(".charity-card__logo").alt = this._name;
-    this._element.querySelector(".charity-card__url").textContent =
-      this._profileUrl;
+    // this._element.querySelector(".charity-card__logo").src = this._logoUrl;
+    // this._element.querySelector(".charity-card__logo").alt = this._name;
+    this._element.querySelector(".charity-card__url").href = this._profileUrl;
 
     console.log(this._element);
 
