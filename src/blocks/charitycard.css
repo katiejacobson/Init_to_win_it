@@ -4,17 +4,17 @@
 
 .charities__container {
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-wrap: row wrap;
-  column-gap: 10px;
-  justify-content: center;
-  align-items: center;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center
 }
 
 .charity-card {
-  max-width: 300px;
-  max-height: 200px;
+  max-width: 250px;
+  max-height: 230px;
   flex-direction: row;
   list-style-type: none;
   margin: 0 auto;
@@ -29,7 +29,8 @@
 .charity-card__name {
   font-size: 25px;
   line-height: 1.2;
- 
+  margin-left: 10px;
+  margin-right: 10px;
   color: rgb(0, 156, 156);
 }
 
