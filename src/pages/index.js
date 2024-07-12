@@ -1,6 +1,7 @@
 import "../pages/index.css";
-import Api from "../components/api.js";
-import Charities from "../components/charities.js";
+import Api from "../components/Api.js";
+import Charities from "../components/Charities.js";
+import CharityCard from "../components/CharityCard.js";
 
 // const api = new Api({
 //   baseUrl: "https://api.charityapi.org",
@@ -23,8 +24,12 @@ function handleCharityFormSubmit(data) {
   api
     .getInfo(data)
     .then((res) => {
-      console.log(res.nonprofits[0]);
-      console.log(res.nonprofits[1]);
+      createCharityCard(res.nonprofits[2]);
     })
     .catch(console.error);
+}
+
+function createCharityCard(data) {
+  const charityCard = new CharityCard(data, "#charity-card-template");
+  return charityCard.generateCard();
 }
