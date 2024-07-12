@@ -134,65 +134,68 @@
 
       <!-- Donation Popup Form-->
       <div class="donation__popup" id="popup">
-        <button
-          class="popup__close-button"
-          type="button"
-          aria-label="close"
-        ></button>
-        <form class="donation-form">
-          <h3 class="donation-form__heading">What will you donate?</h3>
-          <div class="donation-form__label">
-            <input
-              type="text"
-              id=""
-              class="donation-form__input"
-              placeholder="Name"
-              name="name"
-              required
-              minlength="1"
-              maxlength="25"
-            />
-          </div>
-          <div class="donation-form__label">
-            <input
-              type="text"
-              id=""
-              class="donation-form__input"
-              placeholder="Who will you donate to?"
-              name="charity"
-              required
-              minlength="1"
-              maxlength="25"
-            />
-          </div>
-          <div class="donation-form__label">
-            <input
-              type="text"
-              id=""
-              class="donation-form__input"
-              placeholder="What will you donate?"
-              name="text"
-              required
-              minlength="1"
-              maxlength="25"
-            />
-          </div>
-          <div class="donation-form__label">
-            <input
-              type="url"
-              id=""
-              class="donation-form__input"
-              placeholder="Image URL for your donation"
-              type="url"
-              name="link"
-              required
-              minlength="1"
-            />
-          </div>
-          <button type="submit" class="donation-form__submit-button">
-            Submit here
-          </button>
-        </form>
+        <!-- Window created for close button to have position absolute -->
+        <div class="donation__popup-window">
+          <button
+            class="popup__close-button"
+            type="button"
+            aria-label="close"
+          ></button>
+          <form class="donation-form">
+            <h3 class="donation-form__heading">What will you donate?</h3>
+            <div class="donation-form__label">
+              <input
+                type="text"
+                id=""
+                class="donation-form__input"
+                placeholder="Name"
+                name="name"
+                required
+                minlength="1"
+                maxlength="25"
+              />
+            </div>
+            <div class="donation-form__label">
+              <input
+                type="text"
+                id=""
+                class="donation-form__input"
+                placeholder="Who will you donate to?"
+                name="charity"
+                required
+                minlength="1"
+                maxlength="25"
+              />
+            </div>
+            <div class="donation-form__label">
+              <input
+                type="text"
+                id=""
+                class="donation-form__input"
+                placeholder="What will you donate?"
+                name="text"
+                required
+                minlength="1"
+                maxlength="25"
+              />
+            </div>
+            <div class="donation-form__label">
+              <input
+                type="url"
+                id=""
+                class="donation-form__input"
+                placeholder="Image URL for your donation"
+                type="url"
+                name="link"
+                required
+                minlength="1"
+              />
+            </div>
+            <button type="submit" class="donation-form__submit-button">
+              Submit here
+            </button>
+          </form>
+        </div>
       </div>
       <footer class="footer">
         <h2 class="footer__text">About Us</h2>
