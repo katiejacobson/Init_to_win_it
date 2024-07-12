@@ -1,11 +1,10 @@
 // IMPORTS
 import Card from "../components/Card.js";
 import Section from "../components/Section.js";
-// import Api from "../components/Api.js";
 import DonationsPopup from "../components/DonationsPopup.js";
-import "../pages/index.css";
 import Api from "../components/api.js";
 import Charities from "../components/charities.js";
+import "../pages/index.css";
 
 // const api = new Api({
 //   baseUrl: "https://api.charityapi.org",
@@ -15,6 +14,8 @@ import Charities from "../components/charities.js";
 //     // "Content-Type": "application/json",
 //   },
 // });
+
+const donateButton = document.querySelector(".donate__button");
 
 const api = new Api({
   baseUrl: "https://partners.every.org/v0.2/",
@@ -51,5 +52,13 @@ const donationsPopup = new DonationsPopup(".donation__popup", donationRenderer);
 const sectionWhy = new Section(whyRenderer, ".why__gallery");
 const sectionDonations = new Section(donationRenderer, ".donations__gallery");
 
+// FUNCTIONS
+function donateButtonHandler() {
+  donationsPopup.open();
+}
+
 // CLASS METHOD CALLS
 donationsPopup.setEventListeners();
+
+// EVENT LISTENERS
+donateButton.addEventListener("click", donateButtonHandler);

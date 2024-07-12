@@ -16,7 +16,7 @@ export default class donationsPopup extends popup {
     return inputValues;
   }
   close() {
-    this._popupForm.reset();
+    this._form.reset();
     super.close();
   }
   setEventListeners() {
@@ -27,3 +27,4 @@ export default class donationsPopup extends popup {
     });
     super.setEventListeners();
   }
+}
