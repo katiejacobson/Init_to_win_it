@@ -3,6 +3,43 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: violet;
-  height: 300px;
+  background-image: url(../images/nattu-adnan-atSUvc1hMwk-unsplash.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 350px;
+}
+
+.charities__heading {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 48px;
+  opacity: 0.9;
+}
+
+.charities__form {
+  display: flex;
+  background-color: white;
+  padding: 2px;
+  border-radius: 10px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.charities__radio-button {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  align-items: center;
+  gap: 5px;
+}
+
+.charities__radio-button-choice {
+}
+
+.charities__button {
+  background-image: linear-gradient(to right, #d4fbc3 5%, skyblue 95%);
+  border: none;
+  border-radius: 10px;
 }
