@@ -1,7 +1,7 @@
 // IMPORTS
 import Card from "../components/Card.js";
 import Section from "../components/Section.js";
-// import Api from "../components/api.js";
+// import Api from "../components/Api.js";
 import DonationsPopup from "../components/DonationsPopup.js";
 import "../pages/index.css";
 import Api from "../components/api.js";

@@ -27,4 +27,3 @@ export default class donationsPopup extends popup {
     });
     super.setEventListeners();
   }
-}
