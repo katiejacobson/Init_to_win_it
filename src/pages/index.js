@@ -2,8 +2,8 @@ import Card from "../components/Card.js";
 import Section from "../components/Section.js";
 import Donations from "../components/Donations.js";
 import "../pages/index.css";
-import Api from "../components/Api.js";
-import Charities from "../components/Charities.js";
+import Api from "../components/api.js";
+import Charities from "../components/charities.js";
 import CharityCard from "../components/CharityCard.js";
 
 // const api = new Api({
