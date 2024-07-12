@@ -1,7 +1,7 @@
 // IMPORTS
 import Card from "../components/Card.js";
 import Section from "../components/Section.js";
-import DonationsPopup from "../components/DonationsPopup.js";
+import DonationsPopup from "../components/Donations.js";
 import Api from "../components/api.js";
 import Charities from "../components/charities.js";
 import "../pages/index.css";
