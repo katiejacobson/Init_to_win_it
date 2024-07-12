@@ -1,3 +1,41 @@
+.donations {
+  display: flex;
+  justify-content: flex-start;
+}
+.donations__text {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 400;
+  position: relative;
+}
+
+.donate__button {
+  display: flex;
+  position: absolute;
+  height: 25px;
+  width: auto;
+  left: 265px;
+  align-self: end;
+  background-color: #000;
+  color: #fff;
+  border: solid 1px #000;
+  border-radius: 5px;
+  padding: 2px;
+}
+.donations__gallery {
+}
+.donation__popup {
+}
+.popup__container {
+}
+.popup__close-button {
+}
+.donation__form {
+}
+.popup__label {
+}
+.donation__form_input {
+}
 .donation__modal {
     position: relative;
     /* top: 0;
