@@ -106,69 +106,75 @@
           <p class="charities__text">Charities</p>
           <button class=".charities__button"></button>
         </section>
-        <section class="donations">
-          <p class="donations__text">Donations</p>
-          <button class="donate__button" type="button" id="donations">
+
+
+        <!-- Donation card Modal -->
+        <section class="donation__modal">
+          <!-- <p class="donations__text">Donations</p> -->
+           <div class="donation__popup_container">
+            <button class="donate__button" type="button" id="donations">
             Donate here
           </button>
+          <form class="donation__form">
+            <h1 class="donation__form_heading">Pick a Donation</h1>
+            <label class="donation__popup_label">
+              <input
+                type="text"
+                id=""
+                class="donation__form_input"
+                placeholder="Name"
+                name="name"
+                required
+                minlength="1"
+                maxlength="25"
+              />
+            </label>
+            <label class="donation__popup_label">
+              <input
+                type="url"
+                id=""
+                class="donation__form_input"
+                placeholder="Image URL"
+                type="url"
+                name="link"
+                required
+                minlength="1"
+              />
+            </label>
+            <label class="donation__popup_label">
+              <input
+                type="text"
+                id=""
+                class="donation__form_input"
+                placeholder="Charity"
+                name="charity"
+                required
+                minlength="1"
+                maxlength="25"
+              />
+            </label>
+            <label class="donation__popup_label">
+              <input
+                type="text"
+                id=""
+                class="donation__form_input"
+                placeholder="Donation"
+                name="text"
+                required
+                minlength="1"
+                maxlength="25"
+              />
+            </label>
+            <button type="submit" class="donate__submit_button">Submit here</button>
+          </form>
           <ul class="donations__gallery"></ul>
         </section>
         <div class="donation__popup" id="">
-          <div class="popup__container">
-            <button class="popup__close-button">Close here</button>
+          <div class="donation__container">
+            <button class="donation__close-button">Close here</button>
             <h3>Donate to the Charity of your choice</h3>
-            <form class="donation__form">
-              <label class="popup__label">
-                <input
-                  type="text"
-                  id=""
-                  class="donation__form_input"
-                  placeholder="Name"
-                  name="name"
-                  required
-                  minlength="1"
-                  maxlength="25"
-                />
-              </label>
-              <label class="popup__label">
-                <input
-                  type="url"
-                  id=""
-                  class="donation__form_input"
-                  placeholder="Image URL"
-                  type="url"
-                  name="link"
-                  required
-                  minlength="1"
-                />
-              </label>
-              <label class="popup__label">
-                <input
-                  type="text"
-                  id=""
-                  class="donation__form_input"
-                  placeholder="Charity"
-                  name="charity"
-                  required
-                  minlength="1"
-                  maxlength="25"
-                />
-              </label>
-              <label class="popup__label">
-                <input
-                  type="text"
-                  id=""
-                  class="donation__form_input"
-                  placeholder="Donation"
-                  name="text"
-                  required
-                  minlength="1"
-                  maxlength="25"
-                />
-              </label>
-              <button type="submit" class="donate__button">Submit here</button>
-            </form>
           </div>
+        </div>
         </div>
         <template id="card__template">
           <li class="card">

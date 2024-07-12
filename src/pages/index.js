@@ -11,8 +11,6 @@ import CharityCard from "../components/CharityCard.js";
 
 import DonationsPopup from "../components/DonationsPopup.js";
 
-const cardTemplate =
-  document.querySelector("#card__template").content.firstElementChild;
 const donateButton = document.querySelector(".donate__button");
 
 //API instantiation
@@ -42,7 +40,8 @@ function createCharityCard(data) {
 const charityCardList = new Section(createCharityCard, "#charities-container");
 
 // CLASS INSTANTATION
-
+const cardTemplate =
+  document.querySelector("#card__template").content.firstElementChild;
 const createCard = (cardData) => {
   const newCard = new Card(cardData, cardTemplate);
   return newCard.createCard();
