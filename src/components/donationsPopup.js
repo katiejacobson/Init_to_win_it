@@ -13,7 +13,6 @@ export default class donationsPopup extends popup {
       console.log(`input: ${input}`);
       inputValues[input.name] = input.value;
     });
-    console.log(inputValues);
     return inputValues;
   }
   close() {
@@ -23,11 +22,8 @@ export default class donationsPopup extends popup {
   setEventListeners() {
     this._form.addEventListener("submit", (evt) => {
       evt.preventDefault();
-
       const inputValues = this._getInputValues();
-      console.log(`values: ${inputValues}`);
       this._formSubmit(inputValues);
     });
     super.setEventListeners();
   }
-}
