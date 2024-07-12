@@ -15,6 +15,8 @@ import "../pages/index.css";
 //   },
 // });
 
+const cardTemplate =
+  document.querySelector("#card__template").content.firstElementChild;
 const donateButton = document.querySelector(".donate__button");
 
 const api = new Api({
@@ -22,8 +24,8 @@ const api = new Api({
   apiKey: "pk_live_51295acbffe33d27ac313b33feb97d63",
 });
 
-const charityForm = new Charities(".charities", handleCharityFormSubmit);
-charityForm.setEventListeners();
+// const charityForm = new Charities(".charities", handleCharityFormSubmit);
+// charityForm.setEventListeners();
 
 function handleCharityFormSubmit(data) {
   api
@@ -36,8 +38,7 @@ function handleCharityFormSubmit(data) {
 }
 
 // CLASS INSTANTATION
-const cardTemplate =
-  document.querySelector("#card__template").content.firstElementChild;
+
 const createCard = (cardData) => {
   const newCard = new Card(cardData, cardTemplate);
   return newCard.createCard();
