@@ -47,8 +47,8 @@
     height: 30px;
 }
   
-  .donation__text {
-  }
+  /* .donation__text {
+  } */
 .donation__popup_opened{
     visibility: visible;
 }
