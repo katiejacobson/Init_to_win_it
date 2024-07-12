@@ -25,3 +25,7 @@
 .header__item {
   font-size: 18px;
 }
+.header__item:hover{
+  color: rgb(0, 156, 156);
+  cursor: pointer;
+}
