@@ -23,9 +23,7 @@ import { coderInfo } from "../utils/constants.js";
 //     // "Content-Type": "application/json",
 //   },
 // });
-
-const cardTemplate =
-  document.querySelector("#card__template").content.firstElementChild;
+ 
 
 const donateButton = document.querySelector(".donate__button");
 
@@ -96,10 +94,4 @@ donationsPopup.setEventListeners();
 
 // EVENT LISTENERS
 donateButton.addEventListener("click", donateButtonHandler);
-<<<<<<< HEAD
-// donateButton.addEventListener("click",()=>{
-//   donationsPopup.open();
-//   });
-  
-=======
->>>>>>> 49a4e4ac7c669fcb4eb39bb08a819327b7c37fa0
+ 
