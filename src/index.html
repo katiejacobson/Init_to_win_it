@@ -107,93 +107,101 @@
           <button class=".charities__button"></button>
         </section>
 
-
-        <!-- Donation card Modal -->
-        <section class="donation__modal">
-          <!-- <p class="donations__text">Donations</p> -->
-           <div class="donation__popup_container">
-            <button class="donate__button" type="button" id="donations">
+        <!-- Donation Section-->
+        <section class="donations">
+          <h2 class="donations__heading">Donations</h2>
+          <p class="donations__text">
+            To help people beat the summer heat, what items can you donate to
+            help out? Do you have extra resusable water bottles, light-weight
+            clothing, food that will keep like granola bars, or sunscreen?
+          </p>
+          <button class="donate__button" type="button" id="donations">
             Donate here
           </button>
-          <form class="donation__form">
-            <h1 class="donation__form_heading">Pick a Donation</h1>
-            <label class="donation__popup_label">
-              <input
-                type="text"
-                id=""
-                class="donation__form_input"
-                placeholder="Name"
-                name="name"
-                required
-                minlength="1"
-                maxlength="25"
-              />
-            </label>
-            <label class="donation__popup_label">
-              <input
-                type="url"
-                id=""
-                class="donation__form_input"
-                placeholder="Image URL"
-                type="url"
-                name="link"
-                required
-                minlength="1"
-              />
-            </label>
-            <label class="donation__popup_label">
-              <input
-                type="text"
-                id=""
-                class="donation__form_input"
-                placeholder="Charity"
-                name="charity"
-                required
-                minlength="1"
-                maxlength="25"
-              />
-            </label>
-            <label class="donation__popup_label">
-              <input
-                type="text"
-                id=""
-                class="donation__form_input"
-                placeholder="Donation"
-                name="text"
-                required
-                minlength="1"
-                maxlength="25"
-              />
-            </label>
-            <button type="submit" class="donate__submit_button">Submit here</button>
-          </form>
-          <ul class="donations__gallery"></ul>
-        </section>
-        <div class="donation__popup" id="">
-          <div class="donation__container">
-            <button class="donation__close-button">Close here</button>
-            <h3>Donate to the Charity of your choice</h3>
+          <div class="donation-card__container">
+            <ul class="donations__gallery"></ul>
+            <template id="donation-card__template">
+              <li class="donation-card">
+                <p class="donation-card__name"></p>
+                <p class="donation-card__description"></p>
+                <img src="" alt="" class="donation-card__image" />
+              </li>
+            </template>
           </div>
-        </div>
-        <template id="card__template">
-          <li class="card">
-            <img src="" alt="" class="card__image" />
-          </li>
-        </template>
+        </section>
       </main>
+
+      <!-- Donation Popup Form-->
+      <div class="donation__popup" id="popup">
+        <form class="donation-form">
+          <button
+            class="popup__close-button"
+            type="button"
+            aria-label="close"
+          ></button>
+          <h3 class="donation-form__heading">What will you donate?</h3>
+          <div class="donation-form__label">
+            <input
+              type="text"
+              id=""
+              class="donation-form__input"
+              placeholder="Name"
+              name="name"
+              required
+              minlength="1"
+              maxlength="25"
+            />
+          </div>
+          <div class="donation-form__label">
+            <input
+              type="text"
+              id=""
+              class="donation-form__input"
+              placeholder="What will you donate?"
+              name="text"
+              required
+              minlength="1"
+              maxlength="25"
+            />
+          </div>
+          <div class="donation-form__label">
+            <input
+              type="url"
+              id=""
+              class="donation-form__input"
+              placeholder="Image URL for your donation"
+              type="url"
+              name="link"
+              required
+              minlength="1"
+            />
+          </div>
+          <button type="submit" class="donation-form__submit-button">
+            Submit here
+          </button>
+        </form>
+      </div>
       <footer class="footer">
         <h2 class="footer__text">About Us</h2>
-        <div class = "footer__container">
-        <template id="footer-card-template">
-          <li class="footer-card">
-            <h2 class="footer-card__name"></h2>
-            <img class = "footer-card__image" src = "" alt = ""/>
-            <a href = "" class = "footer-card__link" target = "_blank">
-              <img class="footer-card__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png?20210220164014" alt="linked-in logo" /></a>
-              <img class="footer-card__logo" src="./images/linkedin-logo.jpeg" alt="linked-in logo" />
-          </li>
-        </template>
-      </div>
+        <div class="footer__container">
+          <template id="footer-card-template">
+            <li class="footer-card">
+              <h2 class="footer-card__name"></h2>
+              <img class="footer-card__image" src="" alt="" />
+              <a href="" class="footer-card__link" target="_blank">
+                <img
+                  class="footer-card__logo"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png?20210220164014"
+                  alt="linked-in logo"
+              /></a>
+              <img
+                class="footer-card__logo"
+                src="./images/linkedin-logo.jpeg"
+                alt="linked-in logo"
+              />
+            </li>
+          </template>
+        </div>
       </footer>
     </div>
   </body>
