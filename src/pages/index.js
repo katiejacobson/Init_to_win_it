@@ -67,8 +67,6 @@ const footerCardList = new Section(createFooterCard, ".footer__container");
 footerCardList.renderItems(coderInfo);
 
 // CLASS INSTANTATION
-const cardTemplate =
-  document.querySelector("#card__template").content.firstElementChild;
 const createCard = (cardData) => {
   const newCard = new Card(cardData, cardTemplate);
   return newCard.createCard();
@@ -93,3 +91,6 @@ donationsPopup.setEventListeners();
 
 // EVENT LISTENERS
 donateButton.addEventListener("click", donateButtonHandler);
+// donateButton.addEventListener("click",()=>{
+//   donationsPopup.open();
+//   });
