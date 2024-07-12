@@ -2,14 +2,16 @@ import Popup from "./Popup.js";
 export default class DonationsPopup extends Popup {
   constructor(popupSelector, formSubmit) {
     super({ popupSelector });
-    this._donationForm = this._popupElement.querySelector(".donation__form");
+    this._donationForm = this._popupElement.querySelector(".donation-form");
     this._formSubmit = formSubmit;
-    this._donationButton = this._popupElement.querySelector(".donate__button");
+    this._submitButton = this._popupElement.querySelector(
+      ".donation-form__submit-button"
+    );
   }
 
   _getInputValues() {
     const inputValues = {};
-    const inputElements = this._form.querySelectorAll(".donation__form_input");
+    const inputElements = this._form.querySelectorAll(".donation-form__input");
     inputElements.forEach((input) => {
       inputValues[input.name] = input.value;
     });
