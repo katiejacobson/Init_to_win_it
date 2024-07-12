@@ -30,4 +30,5 @@ export default class Api {
       `${this._baseUrl}search/causes=${cause}?apiKey=${this._apiKey}`
     ).then(this.renderResult);
   }
+
 }
