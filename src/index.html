@@ -31,6 +31,7 @@
             <p class="why__text">Reason Why3</p>
           </article>
         </section>
+
         <section class="charities" id="charities">
           <h2 class="charities__heading">Charities By Cause</h2>
           <form class="charities__form">
@@ -91,18 +92,20 @@
               </li>
             </template>
           </div>
+
+
         </section>
         <section class="donations">
           <p class="donations__text">Donations</p>
-          <button class="donate__button" type="button"> Donate here</button>
+          <button class="donate__button" type="button" id="donations"> Donate here   
+          </button>
           <ul class="donations__gallery"></ul>
         </section>
         <div class="donation__popup" id="">
-          <div class=" popup__container">
-            <button>
-            </button>
+          <div class="popup__container">
+            <button class="popup__close-button">Close here</button>
+            <h3>Donate to the Charity of your choice</h3>
             <form class="donation__form">
-              <h1>Donate to the Charity of your choice</h1>
               <label class="popup__label">
                 <input 
                 type="text" 
@@ -114,15 +117,16 @@
                 maxlength="25"/>
               </label>
               <label class="popup__label">
-                <input 
-                type="url" 
-                id="" class="donation__form_input"
-                placeholder="Image"
-                type="url"
-                name="link"
-                required
-                minlength="1"
-                maxlength="25"/>
+                <input
+                  type="url"
+                  id=""
+                  class="donation__form_input"
+                  placeholder="Image URL"
+                  type="url"
+                  name="link"
+                  required
+                  minlength="1"
+                />
               </label>
               <label class="popup__label">
                 <input 
@@ -145,6 +149,7 @@
                 minlength="1"
                 maxlength="25"/>
               </label>
+              <button type="submit" class="donate__button">Submit here</button>
             </form>
           </div>
         </div>

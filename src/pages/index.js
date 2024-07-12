@@ -1,10 +1,16 @@
+// IMPORTS
 import Card from "../components/Card.js";
 import Section from "../components/Section.js";
+
 import Donations from "../components/Donations.js";
 import "../pages/index.css";
 import Api from "../components/api.js";
 import Charities from "../components/charities.js";
 import CharityCard from "../components/CharityCard.js";
+
+import DonationsPopup from "../components/DonationsPopup.js";
+
+
 
 // const api = new Api({
 //   baseUrl: "https://api.charityapi.org",
@@ -14,6 +20,8 @@ import CharityCard from "../components/CharityCard.js";
 //     // "Content-Type": "application/json",
 //   },
 // });
+
+const donateButton = document.querySelector(".donate__button");
 
 const api = new Api({
   baseUrl: "https://partners.every.org/v0.2/",
@@ -31,3 +39,34 @@ function handleCharityFormSubmit(data) {
     })
     .catch(console.error);
 }
+
+
+
+// CLASS INSTANTATION
+const cardTemplate =
+  document.querySelector("#card__template").content.firstElementChild;
+const createCard = (cardData) => {
+  const newCard = new Card(cardData, cardTemplate);
+  return newCard.createCard();
+};
+const whyRenderer = (cardData) => {
+  sectionWhy.addItem(createCard(cardData));
+};
+const donationRenderer = (inputData) => {
+  sectionDonations.addItem(createCard(inputData));
+};
+const donationsPopup = new DonationsPopup(".donation__popup", donationRenderer);
+const sectionWhy = new Section(whyRenderer, ".why__gallery");
+const sectionDonations = new Section(donationRenderer, ".donations__gallery");
+
+// FUNCTIONS
+function donateButtonHandler() {
+  donationsPopup.open();
+}
+
+// CLASS METHOD CALLS
+donationsPopup.setEventListeners();
+
+// EVENT LISTENERS
+donateButton.addEventListener("click", donateButtonHandler);
+
