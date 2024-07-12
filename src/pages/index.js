@@ -1,5 +1,5 @@
 // IMPORTS
-import Card from "../components/Card.js";
+import DonationCard from "../components/DonationCard.js";
 import Section from "../components/Section.js";
 
 import Donations from "../components/Donations.js";
@@ -22,9 +22,6 @@ import { coderInfo } from "../utils/constants.js";
 //     // "Content-Type": "application/json",
 //   },
 // });
-
-// const cardTemplate =
-//   document.querySelector("#card__template").content.firstElementChild;
 
 const donateButton = document.querySelector(".donate__button");
 
@@ -67,19 +64,19 @@ const footerCardList = new Section(createFooterCard, ".footer__container");
 footerCardList.renderItems(coderInfo);
 
 // CLASS INSTANTATION
-const createCard = (cardData) => {
-  const newCard = new Card(cardData, cardTemplate);
+const createDonationCard = (cardData) => {
+  const newCard = new DonationCard(cardData, "#donation-card__template");
   return newCard.createCard();
 };
-const whyRenderer = (cardData) => {
-  sectionWhy.addItem(createCard(cardData));
-};
 const donationRenderer = (inputData) => {
-  sectionDonations.addItem(createCard(inputData));
+  console.log(inputData);
+  sectionDonations.addItem(inputData);
 };
-const donationsPopup = new DonationsPopup(".donation__popup", donationRenderer);
-const sectionWhy = new Section(whyRenderer, ".why__gallery");
-const sectionDonations = new Section(donationRenderer, ".donations__gallery");
+const donationsPopup = new DonationsPopup(donationRenderer, ".donation__popup");
+const sectionDonations = new Section(
+  createDonationCard,
+  ".donation-card__container"
+);
 
 // FUNCTIONS
 function donateButtonHandler() {
