@@ -5,14 +5,27 @@ import Section from "../components/Section.js";
 import Donations from "../components/Donations.js";
 import "../pages/index.css";
 
+
 import Api from "../components/Api2.js";
 import Charities from "../components/Charities2.js";
 import CharityCard from "../components/CharityCard.js";
 
 import DonationsPopup from "../components/DonationsPopup.js";
-
 import FooterCard from "../components/FooterCard.js";
 import { coderInfo } from "../utils/constants.js";
+
+// ORIGINAL API?
+// const api = new Api({
+//   baseUrl: "https://api.charityapi.org",
+//   headers: {
+//     apikey:
+//       "live-Om_n2JQF00pe75rH-_Z0dxSyK_zUleLGuvZNju1Y9OzPQNiw2cj-PNd53keBX6i83oC34ZqR49aZssx7",
+//     // "Content-Type": "application/json",
+//   },
+// });
+
+const cardTemplate =
+  document.querySelector("#card__template").content.firstElementChild;
 
 const donateButton = document.querySelector(".donate__button");
 
@@ -37,6 +50,7 @@ function handleCharityFormSubmit(data) {
     .catch(console.error);
 }
 
+
 function createCharityCard(data) {
   const charityCard = new CharityCard(data, "#charity-card-template");
   return charityCard.generateCard();
@@ -44,7 +58,7 @@ function createCharityCard(data) {
 
 const charityCardList = new Section(createCharityCard, "#charities-container");
 
-//Footer Cards
+// FOOTER CARDS
 
 function createFooterCard(data) {
   const footerCard = new FooterCard(data, "#footer-card-template");
@@ -53,6 +67,7 @@ function createFooterCard(data) {
 
 const footerCardList = new Section(createFooterCard, ".footer__container");
 footerCardList.renderItems(coderInfo);
+
 
 // CLASS INSTANTATION
 const cardTemplate =
