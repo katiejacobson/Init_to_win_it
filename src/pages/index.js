@@ -5,7 +5,6 @@ import Section from "../components/Section.js";
 import Donations from "../components/Donations.js";
 import "../pages/index.css";
 
-
 import Api from "../components/Api2.js";
 import Charities from "../components/Charities2.js";
 import CharityCard from "../components/CharityCard.js";
@@ -24,8 +23,8 @@ import { coderInfo } from "../utils/constants.js";
 //   },
 // });
 
-const cardTemplate =
-  document.querySelector("#card__template").content.firstElementChild;
+// const cardTemplate =
+//   document.querySelector("#card__template").content.firstElementChild;
 
 const donateButton = document.querySelector(".donate__button");
 
@@ -50,7 +49,6 @@ function handleCharityFormSubmit(data) {
     .catch(console.error);
 }
 
-
 function createCharityCard(data) {
   const charityCard = new CharityCard(data, "#charity-card-template");
   return charityCard.generateCard();
@@ -67,7 +65,6 @@ function createFooterCard(data) {
 
 const footerCardList = new Section(createFooterCard, ".footer__container");
 footerCardList.renderItems(coderInfo);
-
 
 // CLASS INSTANTATION
 const cardTemplate =
