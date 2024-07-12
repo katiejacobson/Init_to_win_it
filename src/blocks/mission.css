@@ -1,4 +1,26 @@
 .mission {
-  background-color: brown;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/ramon-kagie-iSwzfjgD3uU-unsplash.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 370px;
+}
+.mission__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  opacity: 0.8;
+  width: calc(100% - 48px);
+  height: calc(100% - 200px);
+  margin: 100px, 24px;
+}
+.mission__statement {
+  text-align: center;
+  font-size: 86px;
+  color: black;
 }

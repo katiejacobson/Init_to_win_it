@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code Jam Placeholder</title>
+    <title>Init to Win It</title>
   </head>
   <body class="page">
     <div class="page__content">
       <header class="header">
-        Init to Win it
-        <ul class="nav__items">
+        <p class="header__logo">Init to Win it</p>
+        <ul class="header__nav-items">
           <li class="header__item">Mission Statement</li>
           <li class="header__item">Why Donate</li>
           <li class="header__item">Donate</li>
@@ -17,22 +17,31 @@
         </ul>
       </header>
       <main class="content">
-        <section class="content__background">
-          <p class="content__statment">We Believe in helping those in need</p>
+        <section class="mission">
+          <div class="mission__block">
+            <h1 class="mission__statement">
+              We Believe in helping those in need
+            </h1>
+          </div>
         </section>
         <section class="why">
-          <article class="why__reason">
-            <p class="why__text">Reason Why1</p>
-          </article>
-          <article class="why_reason">
-            <p class="why__text">Reason Why2</p>
-          </article>
-          <article class="why_reason">
-            <p class="why__text">Reason Why3</p>
-          </article>
+          <h2 class="why__header_text">Why Donate?</h2>
+          <p class="why__text">
+            Body text for whatever you’d like to say. Add main takeaway points,
+            quotes, anecdotes, or even a very very short story.
+          </p>
+          <ul class="why__articles-list">
+            <article class="why__article">
+              <p class="why__text">Reason Why1</p>
+            </article>
+            <article class="why__article">
+              <p class="why__text">Reason Why2</p>
+            </article>
+            <article class="why__article">
+              <p class="why__text">Reason Why3</p>
+            </article>
+          </ul>
         </section>
-
-
         <section class="charities" id="charities">
           <h2 class="charities__heading">Charities By Cause</h2>
           <form class="charities__form">
@@ -93,16 +102,13 @@
               </li>
             </template>
           </div>
-
-
-
-     
           <p class="charities__text">Charities</p>
           <button class=".charities__button"></button>
         </section>
         <section class="donations">
           <p class="donations__text">Donations</p>
-          <button class="donate__button" type="button" id="donations"> Donate here   
+          <button class="donate__button" type="button" id="donations">
+            Donate here
           </button>
           <ul class="donations__gallery"></ul>
         </section>
@@ -112,14 +118,16 @@
             <h3>Donate to the Charity of your choice</h3>
             <form class="donation__form">
               <label class="popup__label">
-                <input 
-                type="text" 
-                id="" class="donation__form_input"
-                placeholder="Name"
-                name="name"
-                required
-                minlength="1"
-                maxlength="25"/>
+                <input
+                  type="text"
+                  id=""
+                  class="donation__form_input"
+                  placeholder="Name"
+                  name="name"
+                  required
+                  minlength="1"
+                  maxlength="25"
+                />
               </label>
               <label class="popup__label">
                 <input
@@ -134,25 +142,28 @@
                 />
               </label>
               <label class="popup__label">
-                <input 
-                type="text" 
-                id="" class="donation__form_input"
-                placeholder="Charity"
-                name="charity"
-                required
-                minlength="1"
-                maxlength="25"/>
+                <input
+                  type="text"
+                  id=""
+                  class="donation__form_input"
+                  placeholder="Charity"
+                  name="charity"
+                  required
+                  minlength="1"
+                  maxlength="25"
+                />
               </label>
               <label class="popup__label">
-                <input 
-                type="text" 
-                id=""
-                 class="donation__form_input"
-                placeholder="Donation"
-                name="text"
-                required
-                minlength="1"
-                maxlength="25"/>
+                <input
+                  type="text"
+                  id=""
+                  class="donation__form_input"
+                  placeholder="Donation"
+                  name="text"
+                  required
+                  minlength="1"
+                  maxlength="25"
+                />
               </label>
               <button type="submit" class="donate__button">Submit here</button>
             </form>
