@@ -65,7 +65,7 @@
                 id="veterans"
                 value="veterans"
               />
-              <label for="veterans">veterans</label>
+              <label for="veterans">Veterans</label>
             </div>
             <div class="charities__radio-button">
               <input
@@ -75,7 +75,7 @@
                 id="housing"
                 value="housing"
               />
-              <label for="housing">housing</label>
+              <label for="housing">Housing</label>
             </div>
             <div class="charities__radio-button">
               <input
@@ -85,20 +85,21 @@
                 id="youth"
                 value="youth"
               />
-              <label for="youth">youth</label>
+              <label for="youth">Youth</label>
             </div>
             <button class="charities__button" type="submit" aria-label="submit">
               Check
             </button>
           </form>
-          <div class="charities__container">
-            <p class="charities__info">This is where the text will go</p>
+          <div class="charities__container" id="charities-container">
             <template id="charity-card-template">
               <li class="charity-card">
                 <h2 class="charity-card__name"></h2>
                 <p class="charity-card__location"></p>
-                <img class="charity-card__logo" src="" alt="" />
-                <p class="charity-card__url"></p>
+                <!-- <img class="charity-card__logo" src="" alt="" /> -->
+                <a href="" class="charity-card__url" target="_blank"
+                  ><p>Find out more!</p></a
+                >
               </li>
             </template>
           </div>
