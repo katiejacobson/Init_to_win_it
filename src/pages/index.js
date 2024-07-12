@@ -11,6 +11,9 @@ import CharityCard from "../components/CharityCard.js";
 
 import DonationsPopup from "../components/DonationsPopup.js";
 
+import FooterCard from "../components/FooterCard.js";
+import { coderInfo } from "../utils/constants.js";
+
 const donateButton = document.querySelector(".donate__button");
 
 //API instantiation
@@ -18,6 +21,8 @@ const api = new Api({
   baseUrl: "https://partners.every.org/v0.2/",
   apiKey: "pk_live_51295acbffe33d27ac313b33feb97d63",
 });
+
+//Charity Form
 
 const charityForm = new Charities(".charities", handleCharityFormSubmit);
 charityForm.setEventListeners();
@@ -38,6 +43,16 @@ function createCharityCard(data) {
 }
 
 const charityCardList = new Section(createCharityCard, "#charities-container");
+
+//Footer Cards
+
+function createFooterCard(data) {
+  const footerCard = new FooterCard(data, "#footer-card-template");
+  return footerCard.generateCard();
+}
+
+const footerCardList = new Section(createFooterCard, ".footer__container");
+footerCardList.renderItems(coderInfo);
 
 // CLASS INSTANTATION
 const cardTemplate =

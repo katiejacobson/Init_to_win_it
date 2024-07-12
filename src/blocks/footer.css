@@ -1,5 +1,26 @@
 .footer {
-  align-items: flex-end;
+  /* align-items: flex-end; */
   height: 150px;
   background-color: blueviolet;
+}
+
+.footer-card {
+  max-width: 200px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-card__name {
+  margin: 0;
+}
+
+.footer-card__image {
+  width: 150px;
+}
+
+.footer-card__logo {
+  width: 24px;
+  height: 24px;
 }
