@@ -1,3 +1,6 @@
+import Card from "../components/Card.js";
+import Section from "../components/Section.js";
+import Donations from "../components/Donations.js";
 import "../pages/index.css";
 import Api from "../components/Api.js";
 import Charities from "../components/Charities.js";
@@ -27,9 +30,4 @@ function handleCharityFormSubmit(data) {
       createCharityCard(res.nonprofits[2]);
     })
     .catch(console.error);
-}
-
-function createCharityCard(data) {
-  const charityCard = new CharityCard(data, "#charity-card-template");
-  return charityCard.generateCard();
 }
