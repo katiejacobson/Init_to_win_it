@@ -8,7 +8,7 @@ export default class donationsPopup extends popup {
   }
   _getInputValues() {
     const inputValues = {};
-    const inputElements = this._form.querySelectorAll(".donation_inputs");
+    const inputElements = this._form.querySelectorAll(".donation__form_input");
     inputElements.forEach((input) => {
       console.log(`input: ${input}`);
       inputValues[input.name] = input.value;
