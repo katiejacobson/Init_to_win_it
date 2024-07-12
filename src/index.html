@@ -42,9 +42,68 @@
             </article>
           </ul>
         </section>
-        <section class="charities">
-          <h2 class="charities__header_text">Charities Near You</h2>
-          <p class="charities__text">Search bar input here?</p>
+        <section class="charities" id="charities">
+          <h2 class="charities__heading">Charities By Cause</h2>
+          <form class="charities__form">
+            <!-- <div class="charities__form-field">
+              <input
+                class="charities__input"
+                name="city"
+                type="text"
+                id="charities-city"
+                placeholder="Where are you?"
+                minlength="1"
+                maxlength="30"
+                required
+              />
+            </div> -->
+            <div class="charities__radio-button">
+              <input
+                class="charities__radio-button-choice"
+                type="radio"
+                name="cause"
+                id="veterans"
+                value="veterans"
+              />
+              <label for="veterans">veterans</label>
+            </div>
+            <div class="charities__radio-button">
+              <input
+                class="charities__radio-button-choice"
+                type="radio"
+                name="cause"
+                id="housing"
+                value="housing"
+              />
+              <label for="housing">housing</label>
+            </div>
+            <div class="charities__radio-button">
+              <input
+                class="charities__radio-button-choice"
+                type="radio"
+                name="cause"
+                id="youth"
+                value="youth"
+              />
+              <label for="youth">youth</label>
+            </div>
+            <button class="charities__button" type="submit" aria-label="submit">
+              Check
+            </button>
+          </form>
+          <div class="charities__container">
+            <p class="charities__info">This is where the text will go</p>
+            <template id="charity-card-template">
+              <li class="charity-card">
+                <h2 class="charity-card__name"></h2>
+                <p class="charity-card__location"></p>
+                <img class="charity-card__logo" src="" alt="" />
+                <p class="charity-card__url"></p>
+              </li>
+            </template>
+          </div>
+          <p class="charities__text">Charities</p>
+          <button class=".charities__button"></button>
         </section>
         <section class="donations">
           <p class="donations__text">Donations</p>

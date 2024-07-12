@@ -1,10 +1,19 @@
 // IMPORTS
 import Card from "../components/Card.js";
 import Section from "../components/Section.js";
-import DonationsPopup from "../components/DonationsPopup.js";
+
+
+import Donations from "../components/Donations.js";
+import "../pages/index.css";
+
+
 import Api from "../components/api.js";
 import Charities from "../components/charities.js";
-import "../pages/index.css";
+import CharityCard from "../components/CharityCard.js";
+
+import DonationsPopup from "../components/DonationsPopup.js";
+
+
 
 // const api = new Api({
 //   baseUrl: "https://api.charityapi.org",
@@ -31,11 +40,12 @@ function handleCharityFormSubmit(data) {
   api
     .getInfo(data)
     .then((res) => {
-      console.log(res.nonprofits[0]);
-      console.log(res.nonprofits[1]);
+      createCharityCard(res.nonprofits[2]);
     })
     .catch(console.error);
 }
+
+
 
 // CLASS INSTANTATION
 
@@ -63,3 +73,4 @@ donationsPopup.setEventListeners();
 
 // EVENT LISTENERS
 donateButton.addEventListener("click", donateButtonHandler);
+
