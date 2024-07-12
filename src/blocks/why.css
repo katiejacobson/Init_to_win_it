@@ -1,7 +1,17 @@
 .why {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background-color: turquoise;
   height: 300px;
+}
+
+.why__articles-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.why__article {
+  padding: 15px;
 }

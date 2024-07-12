@@ -1,9 +1,9 @@
 // IMPORTS
 import Card from "../components/Card.js";
 import Section from "../components/Section.js";
-import DonationsPopup from "../components/Donations.js";
+import DonationsPopup from "../components/DonationsPopup.js";
 import Api from "../components/api.js";
-import Charities from "../components/charities.js";
+import Charities from "../components/Charities.js";
 import "../pages/index.css";
 
 // const api = new Api({
@@ -61,4 +61,8 @@ function donateButtonHandler() {
 donationsPopup.setEventListeners();
 
 // EVENT LISTENERS
-donateButton.addEventListener("click", donateButtonHandler);
+// donateButton.addEventListener("click", donateButtonHandler);
+donateButton.addEventListener("click",()=>{
+  donationsPopup.open();
+  });
+  
