@@ -3,15 +3,13 @@
   height: 150px;
   background-color: teal;
 }
-
 .nav_items{
-
   display: flex;
   flex-direction: row;
   gap: 10px;
   list-style: none;
-}
   
+}
 /* .header_item{
+   
 } */
-
