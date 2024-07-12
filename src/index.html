@@ -65,7 +65,7 @@
                 id="veterans"
                 value="veterans"
               />
-              <label for="veterans">veterans</label>
+              <label for="veterans">Veterans</label>
             </div>
             <div class="charities__radio-button">
               <input
@@ -75,7 +75,7 @@
                 id="housing"
                 value="housing"
               />
-              <label for="housing">housing</label>
+              <label for="housing">Housing</label>
             </div>
             <div class="charities__radio-button">
               <input
@@ -85,88 +85,94 @@
                 id="youth"
                 value="youth"
               />
-              <label for="youth">youth</label>
+              <label for="youth">Youth</label>
             </div>
             <button class="charities__button" type="submit" aria-label="submit">
               Check
             </button>
           </form>
-          <div class="charities__container">
-            <p class="charities__info">This is where the text will go</p>
+          <div class="charities__container" id="charities-container">
             <template id="charity-card-template">
               <li class="charity-card">
                 <h2 class="charity-card__name"></h2>
                 <p class="charity-card__location"></p>
-                <img class="charity-card__logo" src="" alt="" />
-                <p class="charity-card__url"></p>
+                <!-- <img class="charity-card__logo" src="" alt="" /> -->
+                <a href="" class="charity-card__url" target="_blank"
+                  ><p>Find out more!</p></a
+                >
               </li>
             </template>
           </div>
           <p class="charities__text">Charities</p>
           <button class=".charities__button"></button>
         </section>
-        <section class="donations">
-          <p class="donations__text">Donations</p>
-          <button class="donate__button" type="button" id="donations">
+
+
+        <!-- Donation card Modal -->
+        <section class="donation__modal">
+          <!-- <p class="donations__text">Donations</p> -->
+           <div class="donation__popup_container">
+            <button class="donate__button" type="button" id="donations">
             Donate here
           </button>
+          <form class="donation__form">
+            <h1 class="donation__form_heading">Pick a Donation</h1>
+            <label class="donation__popup_label">
+              <input
+                type="text"
+                id=""
+                class="donation__form_input"
+                placeholder="Name"
+                name="name"
+                required
+                minlength="1"
+                maxlength="25"
+              />
+            </label>
+            <label class="donation__popup_label">
+              <input
+                type="url"
+                id=""
+                class="donation__form_input"
+                placeholder="Image URL"
+                type="url"
+                name="link"
+                required
+                minlength="1"
+              />
+            </label>
+            <label class="donation__popup_label">
+              <input
+                type="text"
+                id=""
+                class="donation__form_input"
+                placeholder="Charity"
+                name="charity"
+                required
+                minlength="1"
+                maxlength="25"
+              />
+            </label>
+            <label class="donation__popup_label">
+              <input
+                type="text"
+                id=""
+                class="donation__form_input"
+                placeholder="Donation"
+                name="text"
+                required
+                minlength="1"
+                maxlength="25"
+              />
+            </label>
+            <button type="submit" class="donate__submit_button">Submit here</button>
+          </form>
           <ul class="donations__gallery"></ul>
         </section>
         <div class="donation__popup" id="">
-          <div class="popup__container">
-            <button class="popup__close-button">Close here</button>
+          <div class="donation__container">
+            <button class="donation__close-button">Close here</button>
             <h3>Donate to the Charity of your choice</h3>
-            <form class="donation__form">
-              <label class="popup__label">
-                <input
-                  type="text"
-                  id=""
-                  class="donation__form_input"
-                  placeholder="Name"
-                  name="name"
-                  required
-                  minlength="1"
-                  maxlength="25"
-                />
-              </label>
-              <label class="popup__label">
-                <input
-                  type="url"
-                  id=""
-                  class="donation__form_input"
-                  placeholder="Image URL"
-                  type="url"
-                  name="link"
-                  required
-                  minlength="1"
-                />
-              </label>
-              <label class="popup__label">
-                <input
-                  type="text"
-                  id=""
-                  class="donation__form_input"
-                  placeholder="Charity"
-                  name="charity"
-                  required
-                  minlength="1"
-                  maxlength="25"
-                />
-              </label>
-              <label class="popup__label">
-                <input
-                  type="text"
-                  id=""
-                  class="donation__form_input"
-                  placeholder="Donation"
-                  name="text"
-                  required
-                  minlength="1"
-                  maxlength="25"
-                />
-              </label>
-              <button type="submit" class="donate__button">Submit here</button>
-            </form>
           </div>
         </div>
         <template id="card__template">
@@ -176,7 +182,18 @@
         </template>
       </main>
       <footer class="footer">
-        <p class="footer__text">Footer</p>
+        <h2 class="footer__text">About Us</h2>
+        <div class = "footer__container">
+        <template id="footer-card-template">
+          <li class="footer-card">
+            <h2 class="footer-card__name"></h2>
+            <img class = "footer-card__image" src = "" alt = ""/>
+            <a href = "" class = "footer-card__link" target = "_blank">
+              <img class="footer-card__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png?20210220164014" alt="linked-in logo" /></a>
+              <img class="footer-card__logo" src="./images/linkedin-logo.jpeg" alt="linked-in logo" />
+          </li>
+        </template>
+      </div>
       </footer>
     </div>
   </body>
