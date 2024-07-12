@@ -18,7 +18,6 @@ export default class DonationCard {
     return _cardElement;
   }
   createCard() {
-    console.log(`card: ${this._data}`);
     this._cardElement = this._getTemplate();
     this._cardName = this._cardElement.querySelector(".donation-card__name");
     this._cardCharity = this._cardElement.querySelector(
@@ -28,9 +27,6 @@ export default class DonationCard {
       ".donation-card__description"
     );
     this._cardImage = this._cardElement.querySelector(".donation-card__image");
-    console.log(this._cardElement);
-    console.log(this._cardName);
-    console.log(this._name);
     this._cardName.textContent = this._name;
     this._cardCharity.textContent = this._charity;
     this._cardDonation.textContent = this._desc;

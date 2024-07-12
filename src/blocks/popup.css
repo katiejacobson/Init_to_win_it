@@ -37,8 +37,8 @@
   position: absolute;
   bottom: calc(100% + 10px);
   left: calc(100% + 10px);
-  height: 25px;
-  width: 25px;
+  height: 50px;
+  width: 50px;
   z-index: 9;
 }
 
@@ -79,6 +79,5 @@
   width: 80%;
   height: 75px;
   margin: 20px 0;
-
   border: none;
 }

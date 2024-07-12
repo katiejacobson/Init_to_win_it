@@ -73,10 +73,7 @@ const donationRenderer = (inputData) => {
   sectionDonations.addItem(inputData);
 };
 const donationsPopup = new DonationsPopup(donationRenderer, ".donation__popup");
-const sectionDonations = new Section(
-  createDonationCard,
-  ".donation-card__container"
-);
+const sectionDonations = new Section(createDonationCard, ".donations__gallery");
 
 // FUNCTIONS
 function donateButtonHandler() {
@@ -88,4 +85,3 @@ donationsPopup.setEventListeners();
 
 // EVENT LISTENERS
 donateButton.addEventListener("click", donateButtonHandler);
- 

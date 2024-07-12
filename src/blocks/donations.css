@@ -24,7 +24,10 @@
 }
 
 .donations__gallery {
-  width: 100%;
+  list-style-type: none;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  gap: 10px 10px;
 }
