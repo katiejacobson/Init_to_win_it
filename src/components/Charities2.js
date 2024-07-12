@@ -1,12 +1,4 @@
 export default class Charities {
-<<<<<<< HEAD
-  constructor() {
-
-   
-  }
-   
-}
-=======
   constructor(formElement, handleFormSubmit) {
     this._formElement = document.querySelector(formElement);
     this._form = this._formElement.querySelector(".charities__form");
@@ -44,4 +36,3 @@ export default class Charities {
     });
   }
 }
->>>>>>> 682ba408333648ace43dbad0a9143075a13027bf
