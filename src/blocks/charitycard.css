@@ -15,8 +15,6 @@
 }
 
 .charity-card {
-  /* max-width: 250px;
-  max-height: 230px; */
   flex-direction: row;
   list-style-type: none;
   text-align: center;
