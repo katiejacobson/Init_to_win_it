@@ -17,15 +17,34 @@
 .header__nav-items {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 15px;
   list-style: none;
   color: lightskyblue;
+  padding-left: 0;
 }
 
 .header__item {
   font-size: 18px;
 }
-.header__item:hover{
+.header__item:hover {
   color: rgb(0, 156, 156);
   cursor: pointer;
+}
+@media screen and (max-width: 670px) {
+  .header {
+    height: 150px;
+    padding-top: 20px;
+  }
+  .header__logo {
+    font-size: 30px;
+    max-width: 100px;
+  }
+  .header__nav-items {
+    flex-direction: column;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  .header__item {
+    text-align: end;
+  }
 }

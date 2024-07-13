@@ -39,3 +39,14 @@
   margin: auto;
   font-family: Inter;
 }
+
+@media screen and (max-width: 820px) {
+  .why__article {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .why__text {
+    font-size: 4vw;
+  }
+}
