@@ -3,7 +3,7 @@
 }
 
 .charities__container {
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -15,10 +15,8 @@
 }
 
 .charity-card {
-  
   flex-direction: row;
   list-style-type: none;
-  margin: 0 auto;
   text-align: center;
   background: #ffffff;
   border: black;
@@ -30,7 +28,7 @@
   flex-grow: 0;
   max-width: 100%;
   background-color: #ffffff;
-  box-shadow: 0 5px 15px  rgba(0, 0, 0, 85%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 85%);
   border-radius: 15px;
   overflow: hidden;
   margin: 2rem;
@@ -54,4 +52,13 @@
 .charitiy-card__url {
   font-size: 14px;
   text-align: center;
+}
+@media screen and (max-width: 580px) {
+  .charities__container {
+    margin-top: 15px;
+    padding: 15px;
+  }
+  .charity-card {
+    margin: 0.5rem;
+  }
 }
