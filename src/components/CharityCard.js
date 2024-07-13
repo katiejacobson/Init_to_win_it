@@ -27,7 +27,7 @@ export default class CharityCard {
     // this._element.querySelector(".charity-card__logo").alt = this._name;
     this._element.querySelector(".charity-card__url").href = this._profileUrl;
 
-    console.log(this._element);
+    // console.log(this._element);
 
     return this._element;
   }

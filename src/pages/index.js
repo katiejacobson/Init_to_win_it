@@ -10,7 +10,8 @@ import Charities from "../components/Charities.js";
 import CharityCard from "../components/CharityCard.js";
 
 import DonationsPopup from "../components/DonationsPopup.js";
-import { coderInfo } from "../utils/constants.js";
+import FormValidation from "../components/FormValidator.js";
+import { donationFormValidationConfig } from "../utils/constants.js";
 
 const donateButton = document.querySelector(".donate__button");
 
@@ -63,4 +64,17 @@ function donateButtonHandler() {
 donationsPopup.setEventListeners();
 
 // EVENT LISTENERS
-donateButton.addEventListener("click", donateButtonHandler);
+donateButton.addEventListener("click", () => {
+  // donateButtonHandler;
+  donationsPopup.open();
+  donationFormValidator.resetValidation();
+});
+
+//FORM VALIDATION
+const donationFormElement = document.querySelector("#donation-form");
+
+const donationFormValidator = new FormValidation(
+  donationFormValidationConfig,
+  donationFormElement
+);
+donationFormValidator.enableValidation();
