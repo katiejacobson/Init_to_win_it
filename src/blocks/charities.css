@@ -56,8 +56,9 @@
   width: 120px;
   font-size: 20px;
 }
-@media screen and (max-width: 1080px) {
-  .charities {
+@media screen and (max-width: 767px) {
+  .charities__form {
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 580px) {

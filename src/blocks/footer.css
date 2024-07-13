@@ -1,10 +1,10 @@
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  background-color: rgba(0, 255, 127, 0.3);
-}
 .footer__text {
-  font-size: 60px;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 15px;
+}
+
+.footer__link {
+  margin: 0 0 5px;
+  padding-left: 15px;
 }
