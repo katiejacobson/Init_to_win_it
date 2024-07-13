@@ -10,18 +10,7 @@ import Charities from "../components/Charities.js";
 import CharityCard from "../components/CharityCard.js";
 
 import DonationsPopup from "../components/DonationsPopup.js";
-import FooterCard from "../components/FooterCard.js";
 import { coderInfo } from "../utils/constants.js";
-
-// ORIGINAL API?
-// const api = new Api({
-//   baseUrl: "https://api.charityapi.org",
-//   headers: {
-//     apikey:
-//       "live-Om_n2JQF00pe75rH-_Z0dxSyK_zUleLGuvZNju1Y9OzPQNiw2cj-PNd53keBX6i83oC34ZqR49aZssx7",
-//     // "Content-Type": "application/json",
-//   },
-// });
 
 const donateButton = document.querySelector(".donate__button");
 
