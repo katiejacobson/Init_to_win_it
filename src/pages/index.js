@@ -1,9 +1,4 @@
 // IMPORTS
-import imageBree from "../images/bree-image.jpg";
-
-// const breeImage = document.getElementById("Bree-image");
-// breeImage.src = imageBree;
-
 import DonationCard from "../components/DonationCard.js";
 import Section from "../components/Section.js";
 
