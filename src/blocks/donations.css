@@ -8,16 +8,6 @@
   100% {
     transform: scale(1.5);
   }
-@keyframes pulsate {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.6;
-  }
-  100% {
-    transform: scale(1.5);
-  }
 }
 .donations {
   text-align: center;
@@ -54,7 +44,7 @@
   padding: 2px;
   font-size: 20px;
 }
-.donate__button:hover {
+
 .donate__button:hover {
   animation: pulsate 3s ease-in-out 0s infinite;
   cursor: pointer;
