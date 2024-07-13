@@ -31,7 +31,11 @@
   flex-grow: 0;
   max-width: 100%;
   background-color: #ffffff;
+<<<<<<< HEAD
+  box-shadow: 0 5px 15px  rgba(0, 0, 0, 85%);
+=======
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+>>>>>>> 9da10a7d7e7f49bad51d45c273c372962802409d
   border-radius: 15px;
   overflow: hidden;
   margin: 2rem;
