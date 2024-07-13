@@ -3,6 +3,7 @@
   height: 430px;
   width: 300px;
   border-radius: 20px;
+  padding: 10px;
 }
 
 .donation-card__image {
@@ -15,10 +16,13 @@
 .donation-card__description {
   color: white;
   font-size: 20px;
+  margin-top: 10px;
 }
 .donation-card__charity {
   color: white;
+  margin-top: 10px;
 }
 .donation-card__name {
   color: white;
+  margin-top: 10px;
 }

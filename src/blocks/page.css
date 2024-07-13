@@ -1,8 +1,9 @@
 .page {
   display: flex;
   justify-content: center;
-  /* background-image: url(../images/page-background.jpg);
-  background-size: cover; */
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 .page__content {
@@ -11,4 +12,8 @@
   max-width: 1600px;
   min-height: 100vh;
   margin: 0 15px;
+}
+
+section {
+  margin-top: 20px;
 }

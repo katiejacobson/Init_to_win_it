@@ -8,6 +8,8 @@
   font-size: 35px;
   font-family: Inter;
   justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 10px;
   /* border-top-right-radius: 20px;
     border-top-left-radius: 20px; */
 }
