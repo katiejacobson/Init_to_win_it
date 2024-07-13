@@ -53,16 +53,6 @@ function createCharityCard(data) {
 
 const charityCardList = new Section(createCharityCard, "#charities-container");
 
-// FOOTER CARDS
-
-//function createFooterCard(data) {
-//  const footerCard = new FooterCard(data, "#footer-card-template");
-//  return footerCard.generateCard();
-//}
-
-// const footerCardList = new Section(createFooterCard, ".footer__container");
-// footerCardList.renderItems(coderInfo);
-
 // CLASS INSTANTATION
 const createDonationCard = (cardData) => {
   const newCard = new DonationCard(cardData, "#donation-card__template");
