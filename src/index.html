@@ -10,14 +10,14 @@
       <header class="header">
         <p class="header__logo">Init to Win it</p>
         <ul class="header__nav-items">
-          <li class="header__item">Mission Statment</li>
-          <li class="header__item">Why Donate</li>
-          <li class="header__item">Donate</li>
-          <li class="header__item">About US</li>
+          <li><a href="#mission" class="header__item">Mission Statment</a></li>
+          <li><a href="#why__donate" class="header__item">Why Donate</a></li>
+          <li><a href="#charities" class="header__item">Donate</a></li>
+          <li><a href="#about" class="header__item">About US</a></li>
         </ul>
       </header>
       <main class="content">
-        <section class="mission">
+        <section class="mission" id="mission">
           <div class="mission__block">
             <h1 class="mission__statement">
               We Believe in helping those in need
@@ -25,7 +25,7 @@
           </div>
         </section>
         <section class="why">
-          <h2 class="why__header_text" href="#why__donate">Why Donate?</h2>
+          <h2 class="why__header_text" id="why__donate">Why Donate?</h2>
           <!--<p class="why__text">
             Body text for whatever you’d like to say. Add main takeaway points,
             quotes, anecdotes, or even a very very short story.
@@ -120,12 +120,11 @@
           <div class="donation-card__container">
             <ul class="donations__gallery"></ul>
             <template id="donation-card__template">
-              
               <li class="donation-card">
                 <img src="" alt="" class="donation-card__image" />
-                <p class="donation-card__name"> </p>
-                <p class="donation-card__charity">  </p>
-                <p class="donation-card__description"> </p>
+                <p class="donation-card__name"></p>
+                <p class="donation-card__charity"></p>
+                <p class="donation-card__description"></p>
                 <!-- <img src="" alt="" class="donation-card__image" /> -->
               </li>
             </template>
@@ -199,11 +198,30 @@
         </div>
       </div>
       <footer class="footer">
-        <h2 class="footer__text">About Us</h2>
+        <h2 class="footer__text" id="about">About Us</h2>
         <div class="footer__container">
-          <template id="footer-card-template">
+          <ul class="footer-card__list">
             <li class="footer-card">
-              <h2 class="footer-card__name"></h2>
+              <h2 class="footer-card__name">Bree</h2>
+              <img
+                class="footer-card__image"
+                src="./images/bree-image.jpg"
+                alt="Bree"
+              />
+              <a href="" class="footer-card__link" target="_blank">
+                <img
+                  class="footer-card__logo"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png?20210220164014"
+                  alt="linked-in logo"
+              /></a>
+              <img
+                class="footer-card__logo"
+                src="./images/linkedin-logo.jpeg"
+                alt="linked-in logo"
+              />
+            </li>
+            <li class="footer-card">
+              <h2 class="footer-card__name">Imani</h2>
               <img class="footer-card__image" src="" alt="" />
               <a href="" class="footer-card__link" target="_blank">
                 <img
@@ -217,7 +235,41 @@
                 alt="linked-in logo"
               />
             </li>
-          </template>
+            <li class="footer-card">
+              <h2 class="footer-card__name">Katie</h2>
+              <img class="footer-card__image" src="" alt="" />
+              <a href="" class="footer-card__link" target="_blank">
+                <img
+                  class="footer-card__logo"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png?20210220164014"
+                  alt="linked-in logo"
+              /></a>
+              <img
+                class="footer-card__logo"
+                src="./images/linkedin-logo.jpeg"
+                alt="linked-in logo"
+              />
+            </li>
+            <li class="footer-card">
+              <h2 class="footer-card__name">Jacob</h2>
+              <img
+                class="footer-card__image"
+                src="./images/jacob-image.jpeg"
+                alt="Jacob"
+              />
+              <a href="" class="footer-card__link" target="_blank">
+                <img
+                  class="footer-card__logo"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png?20210220164014"
+                  alt="linked-in logo"
+              /></a>
+              <img
+                class="footer-card__logo"
+                src="./images/linkedin-logo.jpeg"
+                alt="linked-in logo"
+              />
+            </li>
+          </ul>
         </div>
       </footer>
     </div>

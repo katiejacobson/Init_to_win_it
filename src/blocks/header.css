@@ -18,13 +18,15 @@
   display: flex;
   flex-direction: row;
   gap: 15px;
-  list-style: none;
-  color: lightskyblue;
+  list-style-type: none;
   padding-left: 0;
 }
 
 .header__item {
+  display: flex;
   font-size: 18px;
+  text-decoration: none;
+  color: lightskyblue;
 }
 .header__item:hover {
   color: rgb(0, 156, 156);
