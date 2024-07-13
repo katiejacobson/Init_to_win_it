@@ -27,9 +27,9 @@ export default class DonationCard {
       ".donation-card__description"
     );
     this._cardImage = this._cardElement.querySelector(".donation-card__image");
-    this._cardName.textContent = this._name;
-    this._cardCharity.textContent = this._charity;
-    this._cardDonation.textContent = this._desc;
+    this._cardName.textContent = `Name: ${this._name}`;
+    this._cardCharity.textContent = `Charity: ${this._charity}`;
+    this._cardDonation.textContent = `Donation: ${this._desc}`;
 
     this._cardImage.src = this._link;
     this._cardImage.alt = this._desc;

@@ -1,11 +1,9 @@
 .donation-card {
-  
   background-color: #000;
-    height: 430px;
-    width: 300px;
-    border-radius: 20px;
+  height: 430px;
+  width: 300px;
+  border-radius: 20px;
 }
-
 
 .donation-card__image {
   width: 90%;
@@ -14,13 +12,13 @@
   margin-top: 10px;
   border-radius: 15px;
 }
-.donation-card__description{
+.donation-card__description {
   color: white;
   font-size: 20px;
 }
-.donation-card__charity{
+.donation-card__charity {
   color: white;
 }
-.donation-card__name{
+.donation-card__name {
   color: white;
 }
