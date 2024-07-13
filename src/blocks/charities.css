@@ -37,16 +37,20 @@
   padding: 5px;
   align-items: center;
   gap: 5px;
+  margin: 0 5px;
 }
 
-/* .charities__radio-button-choice {
+/* .charities__input {
 } */
 
 .charities__button {
   background-image: linear-gradient(to right, #d4fbc3 5%, skyblue 95%);
   border: none;
-  border-radius: 10px;
-  margin-left: 25px;
+  border-radius: 20px;
+  margin-left: 10px;
+  height: 45px;
+  width: 120px;
+  font-size: 20px;
 }
 @media screen and (max-width: 1080px) {
   .charities {
