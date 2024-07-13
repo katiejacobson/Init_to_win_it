@@ -22,7 +22,6 @@
             <h1 class="mission__statement">
               We Believe in helping those in need
             </h1>
-             
           </div>
           <!-- <div class="mission__block_text">
           <h2 class="mission__text">Our mission is to beat the heat by providing essential support and resources to vulnerable communities during times of extreme temperatures. Through compassionate outreach, we aim to ensure the safety, well-being, and comfort of all individuals, empowering them to thrive even in the hottest of conditions."</h2>
@@ -51,32 +50,21 @@
         </section>
         <section class="charities" id="charities">
           <h2 class="charities__heading">Charities By Cause</h2>
-          <form class="charities__form">
-            <!-- <div class="charities__form-field">
-              <input
-                class="charities__input"
-                name="city"
-                type="text"
-                id="charities-city"
-                placeholder="Where are you?"
-                minlength="1"
-                maxlength="30"
-                required
-              />
-            </div> -->
+          <form class="charities__form" id="charities-form" novalidate>
             <div class="charities__radio-button">
               <input
-                class="charities__radio-button-choice"
+                class="charities__input"
                 type="radio"
                 name="cause"
                 id="veterans"
                 value="veterans"
+                checked
               />
               <label for="veterans">Veterans</label>
             </div>
             <div class="charities__radio-button">
               <input
-                class="charities__radio-button-choice"
+                class="charities__input"
                 type="radio"
                 name="cause"
                 id="housing"
@@ -86,7 +74,7 @@
             </div>
             <div class="charities__radio-button">
               <input
-                class="charities__radio-button-choice"
+                class="charities__input"
                 type="radio"
                 name="cause"
                 id="youth"
@@ -95,8 +83,11 @@
               <label for="youth">Youth</label>
             </div>
             <button class="charities__button" type="submit" aria-label="submit">
-              Search
-            </button>
+              Search</button
+            ><span
+              class="charities-form__error"
+              id="charities-form-error"
+            ></span>
           </form>
           <div class="charities__container" id="charities-container">
             <template id="charity-card-template">
@@ -110,7 +101,6 @@
               </li>
             </template>
           </div>
-          <button class=".charities__button"></button>
         </section>
 
         <!-- Donation Section-->
@@ -148,12 +138,12 @@
             type="button"
             aria-label="close"
           ></button>
-          <form class="donation-form">
+          <form class="donation-form" id="donation-form">
             <h3 class="donation-form__heading">What will you donate?</h3>
             <div class="donation-form__label">
               <input
                 type="text"
-                id=""
+                id="name"
                 class="donation-form__input"
                 placeholder="Name"
                 name="name"
@@ -162,10 +152,11 @@
                 maxlength="25"
               />
             </div>
+            <span class="donation-form__error" id="name-error"></span>
             <div class="donation-form__label">
               <input
                 type="text"
-                id=""
+                id="charity"
                 class="donation-form__input"
                 placeholder="Who will you donate to?"
                 name="charity"
@@ -174,10 +165,11 @@
                 maxlength="25"
               />
             </div>
+            <span class="donation-form__error" id="charity-error"></span>
             <div class="donation-form__label">
               <input
                 type="text"
-                id=""
+                id="item"
                 class="donation-form__input"
                 placeholder="What will you donate?"
                 name="text"
@@ -186,10 +178,11 @@
                 maxlength="25"
               />
             </div>
+            <span class="donation-form__error" id="item-error"></span>
             <div class="donation-form__label">
               <input
                 type="url"
-                id=""
+                id="image"
                 class="donation-form__input"
                 placeholder="Image URL for your donation"
                 type="url"
@@ -198,6 +191,7 @@
                 minlength="1"
               />
             </div>
+            <span class="donation-form__error" id="image-error"></span>
             <button type="submit" class="donation-form__submit-button">
               Submit here
             </button>

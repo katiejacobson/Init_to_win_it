@@ -12,7 +12,7 @@ export default class Charities {
     var cause;
     for (var i = 0; i < elements.length; i++) {
       if (elements[i].checked) {
-        console.log(elements[i]);
+        // console.log(elements[i]);
         cause = elements[i].value;
       }
     }
