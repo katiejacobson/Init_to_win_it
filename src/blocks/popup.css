@@ -25,21 +25,23 @@
 
 .donation-form {
   width: 600px;
-  height: 700px;
-  background-color: #aa2121;
+  height: 400px;
+  background-color: #fff;
   margin: 20px auto;
   text-align: center;
   position: relative;
   border-radius: 3%;
+  
 }
 
 .popup__close-button {
   position: absolute;
-  bottom: calc(100% + 10px);
+  bottom: calc(100% + -5px);
   left: calc(100% + 10px);
   height: 50px;
   width: 50px;
   z-index: 9;
+  cursor: pointer;
 }
 
 /* .donate__button {
