@@ -15,22 +15,21 @@ import { donationFormValidationConfig } from "../utils/constants.js";
 
 const donateButton = document.querySelector(".donate__button");
 
-//API instantiation
+//API INSTANTIATION
 const api = new Api({
   baseUrl: "https://partners.every.org/v0.2/",
   apiKey: "pk_live_51295acbffe33d27ac313b33feb97d63",
 });
 
-//Charity Form
-
+//CHARITY FORM
 const charityForm = new Charities(".charities", handleCharityFormSubmit);
 charityForm.setEventListeners();
 
 function handleCharityFormSubmit(data) {
+  charityCardList.clearItems();
   api
     .getInfo(data)
     .then((res) => {
-      createCharityCard(res.nonprofits[2]);
       charityCardList.renderItems(res.nonprofits);
     })
     .catch(console.error);
@@ -43,29 +42,22 @@ function createCharityCard(data) {
 
 const charityCardList = new Section(createCharityCard, "#charities-container");
 
-// CLASS INSTANTATION
+// DONATIONFORM
 const createDonationCard = (cardData) => {
   const newCard = new DonationCard(cardData, "#donation-card__template");
   return newCard.createCard();
 };
 const donationRenderer = (inputData) => {
-  console.log(inputData);
   sectionDonations.addItem(inputData);
 };
 const donationsPopup = new DonationsPopup(donationRenderer, ".donation__popup");
 const sectionDonations = new Section(createDonationCard, ".donations__gallery");
-
-// FUNCTIONS
-function donateButtonHandler() {
-  donationsPopup.open();
-}
 
 // CLASS METHOD CALLS
 donationsPopup.setEventListeners();
 
 // EVENT LISTENERS
 donateButton.addEventListener("click", () => {
-  // donateButtonHandler;
   donationsPopup.open();
   donationFormValidator.resetValidation();
 });

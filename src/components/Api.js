@@ -23,9 +23,6 @@ export default class Api {
   //   }
 
   getInfo(cause) {
-    console.log(
-      `${this._baseUrl}search/causes=${cause}?apiKey=${this._apiKey}`
-    );
     return fetch(
       `${this._baseUrl}search/causes=${cause}?apiKey=${this._apiKey}`
     ).then(this.renderResult);

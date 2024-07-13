@@ -38,7 +38,6 @@ export default class FormValidation {
   }
 
   resetValidation() {
-    console.log("inside resetValidation");
     this.toggleButtonState();
 
     this._inputList.forEach((inputElement) => {
@@ -50,7 +49,6 @@ export default class FormValidation {
     if (this._hasInvalidInput()) {
       this._buttonElement.classList.add(this._inactiveButtonClass);
       this._buttonElement.disabled = true;
-      console.log(this._buttonElement.classList);
     } else {
       this._buttonElement.classList.remove(this._inactiveButtonClass);
       this._buttonElement.disabled = false;
