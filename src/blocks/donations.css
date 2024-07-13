@@ -16,6 +16,9 @@ transform: scale(1.5);
     border-radius: 10px;
 }
 
+.donations__heading {
+  font-size: 46px;
+}
 .donations__text {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px;

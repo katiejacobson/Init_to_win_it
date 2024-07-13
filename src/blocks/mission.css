@@ -15,9 +15,9 @@
   align-items: center;
   background-color: azure;
   opacity: 0.8;
-  width: calc(60% - 10px);
+  width: 710px;
+  height: 170px;
   padding: 0 60px;
-  height: calc(100% - 200px);
   border-radius: 20px;
 }
 .mission__block_text{
@@ -31,8 +31,33 @@
   font-size: 70px;
   color: #000;
 }
-.mission__text{
-  color: #000000;
-  font-weight: 400;
-  
+
+@media screen and (max-width: 1000px) {
+  .mission__block {
+    width: 78%;
+    height: calc(100% - 200px);
+    padding: 0 40px;
+  }
+  .mission__statement {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .mission__block {
+    height: 60%;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 535px) {
+  .mission {
+    background-size: auto 100%;
+  }
+  .mission__statement {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mission__statement {
+    font-size: 30px;
+  }
 }
