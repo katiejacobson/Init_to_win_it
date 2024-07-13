@@ -1,4 +1,4 @@
-import Popup from "./Popup.js";
+import Popup from "./popup.js";
 export default class DonationsPopup extends Popup {
   constructor(formSubmit, popupSelector) {
     super({ popupSelector });

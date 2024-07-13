@@ -1,4 +1,9 @@
 // IMPORTS
+import imageBree from "../images/bree-image.jpg";
+
+// const breeImage = document.getElementById("Bree-image");
+// breeImage.src = imageBree;
+
 import DonationCard from "../components/DonationCard.js";
 import Section from "../components/Section.js";
 
@@ -60,8 +65,8 @@ const charityCardList = new Section(createCharityCard, "#charities-container");
 //  return footerCard.generateCard();
 //}
 
-const footerCardList = new Section(createFooterCard, ".footer__container");
-footerCardList.renderItems(coderInfo);
+// const footerCardList = new Section(createFooterCard, ".footer__container");
+// footerCardList.renderItems(coderInfo);
 
 // CLASS INSTANTATION
 const createDonationCard = (cardData) => {
