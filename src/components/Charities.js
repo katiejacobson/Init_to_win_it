@@ -7,12 +7,6 @@ export default class Charities {
     this._handleFormSubmit = handleFormSubmit;
   }
 
-  _getCity() {
-    const city = this._input.value;
-    console.log(city);
-    return city;
-  }
-
   _getCause() {
     var elements = document.getElementsByName("cause");
     var cause;
@@ -28,9 +22,7 @@ export default class Charities {
   setEventListeners() {
     this._formBtn.addEventListener("click", (evt) => {
       evt.preventDefault();
-      // const selectedCity = this._getCity();
       const selectedCause = this._getCause();
-      console.log(selectedCause);
       this._handleFormSubmit(selectedCause);
       this._form.reset();
     });

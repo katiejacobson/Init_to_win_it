@@ -10,35 +10,42 @@
       <header class="header">
         <p class="header__logo">Init to Win it</p>
         <ul class="header__nav-items">
-          <li class="header__item">Mission Statment</li>
-          <li class="header__item">Why Donate</li>
-          <li class="header__item">Donate</li>
-          <li class="header__item">About US</li>
+          <li><a href="#mission" class="header__item">Mission Statment</a></li>
+          <li><a href="#why__donate" class="header__item">Why Donate</a></li>
+          <li><a href="#charities" class="header__item">Donate</a></li>
+          <li><a href="#about" class="header__item">About US</a></li>
         </ul>
       </header>
       <main class="content">
-        <section class="mission">
+        <section class="mission" id="mission">
           <div class="mission__block">
             <h1 class="mission__statement">
               We Believe in helping those in need
             </h1>
+             
           </div>
+          <!-- <div class="mission__block_text">
+          <h2 class="mission__text">Our mission is to beat the heat by providing essential support and resources to vulnerable communities during times of extreme temperatures. Through compassionate outreach, we aim to ensure the safety, well-being, and comfort of all individuals, empowering them to thrive even in the hottest of conditions."</h2>
+          </div> -->
         </section>
         <section class="why">
-          <h2 class="why__header_text" href="#why__donate">Why Donate?</h2>
+          <h2 class="why__header_text" id="why__donate">Why Donate?</h2>
           <!--<p class="why__text">
             Body text for whatever you’d like to say. Add main takeaway points,
             quotes, anecdotes, or even a very very short story.
           </p>-->
           <ul class="why__articles-list">
             <article class="why__article">
-              <p class="why__text">Reason Why1</p>
+              <h3 class="why_artical_heading">Veterans</h3>
+              <p class="why__text">Veterans text</p>
             </article>
             <article class="why__article">
-              <p class="why__text">Reason Why2</p>
+              <h4 class="why_artical_heading">Homeless</h4>
+              <p class="why__text">Homeless text</p>
             </article>
             <article class="why__article">
-              <p class="why__text">Reason Why3</p>
+              <h5 class="why_artical_heading">Kids</h5>
+              <p class="why__text">Kids in need text</p>
             </article>
           </ul>
         </section>
@@ -88,7 +95,7 @@
               <label for="youth">Youth</label>
             </div>
             <button class="charities__button" type="submit" aria-label="submit">
-              Check
+              Search
             </button>
           </form>
           <div class="charities__container" id="charities-container">
@@ -120,12 +127,11 @@
           <div class="donation-card__container">
             <ul class="donations__gallery"></ul>
             <template id="donation-card__template">
-              
               <li class="donation-card">
                 <img src="" alt="" class="donation-card__image" />
-                <p class="donation-card__name"> </p>
-                <p class="donation-card__charity">  </p>
-                <p class="donation-card__description"> </p>
+                <p class="donation-card__name"></p>
+                <p class="donation-card__charity"></p>
+                <p class="donation-card__description"></p>
                 <!-- <img src="" alt="" class="donation-card__image" /> -->
               </li>
             </template>
@@ -199,25 +205,83 @@
         </div>
       </div>
       <footer class="footer">
-        <h2 class="footer__text">About Us</h2>
+        <h2 class="footer__text" id="about">About Us</h2>
         <div class="footer__container">
-          <template id="footer-card-template">
+          <ul class="footer-card__list">
             <li class="footer-card">
-              <h2 class="footer-card__name"></h2>
-              <img class="footer-card__image" src="" alt="" />
-              <a href="" class="footer-card__link" target="_blank">
+              <h2 class="footer-card__name">Bree Massingill</h2>
+              <img
+                class="footer-card__image"
+                src="<%=require('./images/bree-image.jpg')%>"
+                id="Bree-image"
+                alt="image of Bree"
+              />
+              <a
+                href="https://www.linkedin.com/in/bree-massingill/"
+                class="footer-card__link"
+                target="_blank"
+              >
                 <img
                   class="footer-card__logo"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png?20210220164014"
+                  src="<%=require('./images/linkedin-logo.svg')%>"
                   alt="linked-in logo"
               /></a>
-              <img
-                class="footer-card__logo"
-                src="./images/linkedin-logo.jpeg"
-                alt="linked-in logo"
-              />
             </li>
-          </template>
+            <li class="footer-card">
+              <h2 class="footer-card__name">Imani Walker</h2>
+              <img
+                class="footer-card__image"
+                src="<%=require('./images/imani-image.jpeg')%>"
+                alt="image of Imani"
+              />
+              <a
+                href="https://www.linkedin.com/in/imani-walker-348876284/"
+                class="footer-card__link"
+                target="_blank"
+              >
+                <img
+                  class="footer-card__logo"
+                  src="<%=require('./images/linkedin-logo.svg')%>"
+                  alt="linked-in logo"
+              /></a>
+            </li>
+            <li class="footer-card">
+              <h2 class="footer-card__name">Katie Jacobson</h2>
+              <img
+                class="footer-card__image"
+                src="<%=require('./images/katie-image.jpg')%>"
+                alt="image of Katie"
+              />
+              <a
+                href="https://www.linkedin.com/in/katherine-jacobson-1b3940227/"
+                class="footer-card__link"
+                target="_blank"
+              >
+                <img
+                  class="footer-card__logo"
+                  src="<%=require('./images/linkedin-logo.svg')%>"
+                  alt="linked-in logo"
+              /></a>
+            </li>
+            <li class="footer-card">
+              <h2 class="footer-card__name">Jacob Reyes</h2>
+              <img
+                class="footer-card__image"
+                src="<%=require('./images/jacob-image.jpeg')%>"
+                alt="Jacob"
+              />
+              <a
+                href="http://linkedin.com/in/jacob-reyes-b844512b6"
+                class="footer-card__link"
+                target="_blank"
+              >
+                <img
+                  class="footer-card__logo"
+                  src="<%=require('./images/linkedin-logo.svg')%>"
+                  alt="linked-in logo"
+              /></a>
+            </li>
+          </ul>
         </div>
       </footer>
     </div>
