@@ -20,6 +20,10 @@
   padding: 0 60px;
   border-radius: 20px;
 }
+.mission__block_text{
+  background-color: #d26363;
+   
+}
 .mission__statement {
   text-align: center;
   font-weight: 400;
