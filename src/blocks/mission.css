@@ -7,7 +7,7 @@
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  height: 370px;
+  height: 650px;
   border-radius: 10px;
 }
 .mission__block {
@@ -35,12 +35,13 @@
   align-items: flex-start;
   justify-content: center;
   background-color: azure;
+  color: #000000;
   width: 1410px;
-  font-size: 22px;
-  opacity: 0.6;
+  font-size: 24px;
+  opacity: 0.8;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  height: 140px;
+  height: 170px;
   margin-top: auto;
 }
 @media screen and (max-width: 1000px) {
