@@ -2,8 +2,8 @@ export default class DonationCard {
   constructor(data, cardTemplate) {
     this._data = data;
     this._cardSelector = cardTemplate;
-    this._name = data.name;
-    this._charity = data.charity;
+    this._email = data.email;
+    this._location = data.location;
     this._desc = data.text;
     this._link = data.link;
     this._cardTemplate = cardTemplate;
@@ -19,16 +19,16 @@ export default class DonationCard {
   }
   createCard() {
     this._cardElement = this._getTemplate();
-    this._cardName = this._cardElement.querySelector(".donation-card__name");
-    this._cardCharity = this._cardElement.querySelector(
-      ".donation-card__charity"
+    this._cardEmail = this._cardElement.querySelector(".donation-card__email");
+    this._cardLocation = this._cardElement.querySelector(
+      ".donation-card__location"
     );
     this._cardDonation = this._cardElement.querySelector(
       ".donation-card__description"
     );
     this._cardImage = this._cardElement.querySelector(".donation-card__image");
-    this._cardName.textContent = `Name: ${this._name}`;
-    this._cardCharity.textContent = `Charity: ${this._charity}`;
+    this._cardEmail.textContent = `Email: ${this._email}`;
+    this._cardLocation.textContent = `Location: ${this._location}`;
     this._cardDonation.textContent = `Donation: ${this._desc}`;
 
     this._cardImage.src = this._link;
