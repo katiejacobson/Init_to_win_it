@@ -54,6 +54,7 @@ donationsPopup.setEventListeners();
 
 // EVENT LISTENERS
 donateButton.addEventListener("click", () => {
+  hoverHandler();
   donationsPopup.open();
   donationFormValidator.resetValidation();
 });

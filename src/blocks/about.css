@@ -4,6 +4,7 @@
 }
 
 .about__header {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 50px;
   padding-bottom: 20px;
   text-shadow: 3px 3px 3px white;
@@ -11,7 +12,6 @@
 }
 
 .about__header_name {
-  font-family: Inter;
   color: rgb(8, 210, 255);
   text-shadow: 3px 3px 3px black;
 }
