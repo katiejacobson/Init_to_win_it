@@ -85,6 +85,9 @@
     margin: 0;
     height: 33%;
   }
+  .mission__statement {
+    font-weight: 600;
+  }
   .mission__description {
     border-radius: 0;
     height: 67%;

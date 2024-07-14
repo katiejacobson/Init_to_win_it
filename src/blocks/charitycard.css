@@ -3,7 +3,7 @@
 }
 
 .charities__container {
-  width: 100%;
+  width: 95%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -14,7 +14,8 @@
 }
 
 .charities__container_active {
-  border: outset 5px #00d2d2;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: outset 4px #00d2d2;
   border-radius: 10px;
 }
 
@@ -57,11 +58,7 @@
   font-size: 18px;
   text-align: center;
 }
-@media screen and (max-width: 1700px) {
-  .charities__container {
-    width: 95%;
-  }
-}
+
 @media screen and (max-width: 880px) {
   .charities__container {
     width: 85%;

@@ -93,8 +93,8 @@
 @media screen and (max-width: 767px) {
   .why {
     margin: 20px 30px;
-    padding: 20px 1px;
-    border: outset 5px #00d2d2;
+    padding: 20px 10px;
+    border: outset 4px #00d2d2;
     border-radius: 10px;
   }
   .why__articles-list {
