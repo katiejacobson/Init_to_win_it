@@ -47,14 +47,17 @@
   font-family: Inter;
    
 }
+.why__paragraph{
+  margin: 10px;
+}
 .why-card__image{
-  width: 100%;
+  width: 95%;
   height: 50%;
   object-fit: cover;
   display: flex;
   border-radius: 20px;
-  
   align-items: center;
+  margin: 10px;
  
 }
 
