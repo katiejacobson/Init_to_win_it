@@ -3,15 +3,20 @@
 }
 
 .charities__container {
-  width: 100%;
+  width: 95%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   column-gap: 10px;
   justify-content: center;
   align-items: center;
-  overflow-y: auto;
   overflow-x: hidden;
+}
+
+.charities__container_active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: outset 4px #00d2d2;
+  border-radius: 10px;
 }
 
 .charity-card {
@@ -53,11 +58,7 @@
   font-size: 18px;
   text-align: center;
 }
-@media screen and (max-width: 1700px) {
-  .charities__container {
-    width: 95%;
-  }
-}
+
 @media screen and (max-width: 880px) {
   .charities__container {
     width: 85%;

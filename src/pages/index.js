@@ -10,7 +10,7 @@ import { donationFormValidationConfig } from "../utils/constants.js";
 import "../pages/index.css";
 
 const donateButton = document.querySelector(".donate__button");
-
+const charitiesContainer = document.querySelector(".charities__container");
 //API INSTANTIATION
 const api = new Api({
   baseUrl: "https://partners.every.org/v0.2/",
@@ -27,6 +27,7 @@ function handleCharityFormSubmit(data) {
     .getInfo(data)
     .then((res) => {
       charityCardList.renderItems(res.nonprofits);
+      charitiesContainer.classList.add("charities__container_active");
     })
     .catch(console.error);
 }
