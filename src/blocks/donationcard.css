@@ -4,6 +4,7 @@
   width: 300px;
   border-radius: 20px;
   padding: 10px;
+  text-align: center;
 }
 
 .donation-card__image {
@@ -18,11 +19,11 @@
   font-size: 20px;
   margin-top: 10px;
 }
-.donation-card__charity {
+.donation-card__location {
   color: white;
   margin-top: 10px;
 }
-.donation-card__name {
+.donation-card__email {
   color: white;
   margin-top: 10px;
 }

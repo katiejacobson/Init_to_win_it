@@ -131,8 +131,8 @@
             <template id="donation-card__template">
               <li class="donation-card">
                 <img src="" alt="" class="donation-card__image" />
-                <p class="donation-card__name"></p>
-                <p class="donation-card__charity"></p>
+                <p class="donation-card__email"></p>
+                <p class="donation-card__location"></p>
                 <p class="donation-card__description"></p>
                 <!-- <img src="" alt="" class="donation-card__image" /> -->
               </li>
@@ -314,30 +314,30 @@
             <h3 class="donation-form__heading">What will you donate?</h3>
             <div class="donation-form__label">
               <input
-                type="text"
-                id="name"
+                type="email"
+                id="email"
                 class="donation-form__input"
-                placeholder="Name"
-                name="name"
+                placeholder="Email"
+                name="email"
                 required
                 minlength="1"
                 maxlength="25"
               />
-              <p class="donation-form__error" id="name-error"></p>
+              <p class="donation-form__error" id="email-error"></p>
             </div>
 
             <div class="donation-form__label">
               <input
                 type="text"
-                id="charity"
+                id="location"
                 class="donation-form__input"
-                placeholder="Who will you donate to?"
-                name="charity"
+                placeholder="Where are you located?"
+                name="location"
                 required
                 minlength="1"
                 maxlength="25"
               />
-              <p class="donation-form__error" id="charity-error"></p>
+              <p class="donation-form__error" id="location-error"></p>
             </div>
 
             <div class="donation-form__label">
