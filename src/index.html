@@ -126,7 +126,7 @@
           </form>
           <div class="charities__container" id="charities-container">
             <template id="charity-card-template">
-              <li class="charity-card">
+              <li class="card charity-card">
                 <h2 class="charity-card__name"></h2>
                 <p class="charity-card__location"></p>
                 <!-- <img class="charity-card__logo" src="" alt="" /> -->
@@ -136,7 +136,6 @@
               </li>
             </template>
           </div>
-          <button class=".charities__button"></button>
         </section>
 
         <!-- Donation Section-->
@@ -153,7 +152,7 @@
           <div class="donation-card__container">
             <ul class="donations__gallery"></ul>
             <template id="donation-card__template">
-              <li class="donation-card">
+              <li class="card donation-card">
                 <img src="" alt="" class="donation-card__image" />
                 <p class="donation-card__email"></p>
                 <p class="donation-card__location"></p>
@@ -334,7 +333,7 @@
             type="button"
             aria-label="close"
           ></button>
-          <form class="donation-form">
+          <form class="donation-form" id="donation-form">
             <h3 class="donation-form__heading">What will you donate?</h3>
             <div class="donation-form__label">
               <input

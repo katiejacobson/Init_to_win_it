@@ -1,5 +1,17 @@
+@keyframes appear {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.99);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .card {
-  background-color: slategray;
-  height: 100px;
-   
+  animation: appear 1s ease-out 0s forwards;
 }
