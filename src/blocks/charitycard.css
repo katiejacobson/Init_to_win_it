@@ -10,8 +10,12 @@
   column-gap: 10px;
   justify-content: center;
   align-items: center;
-  overflow-y: auto;
   overflow-x: hidden;
+}
+
+.charities__container_active {
+  border: outset 5px #00d2d2;
+  border-radius: 10px;
 }
 
 .charity-card {
