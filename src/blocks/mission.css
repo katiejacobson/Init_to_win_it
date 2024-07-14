@@ -1,13 +1,12 @@
 .mission {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-image: url(../images/mission-image.jpg);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  height: 370px;
+  height: 40vw;
   border-radius: 10px;
 }
 .mission__block {
@@ -19,7 +18,8 @@
   width: 710px;
   height: 190px;
   padding: 0 60px;
-  border-radius: 20px;
+  border-radius: 10px;
+  margin-top: auto;
 }
 .mission__statement {
   text-align: center;
@@ -28,33 +28,70 @@
   font-size: 70px;
   color: #000;
 }
-
-@media screen and (max-width: 1000px) {
+.mission__description {
+  display: flex;
+  text-align: center;
+  background-color: azure;
+  color: #000000;
+  width: 90%;
+  height: fit-content;
+  font-size: 20px;
+  opacity: 0.8;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: auto;
+  padding: 0 15px;
+}
+@media screen and (max-width: 1020px) {
   .mission__block {
-    width: 78%;
-    height: calc(100% - 200px);
-    padding: 0 40px;
+    height: fit-content;
+    margin-top: 40px;
   }
   .mission__statement {
-    font-size: 40px;
+    font-size: 4vw;
+  }
+  .mission__description {
+    margin-top: auto;
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mission__block {
+    width: 80%;
+    padding: 0 40px;
   }
 }
 @media screen and (max-width: 800px) {
+  .mission__description {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 515px) {
   .mission__block {
-    height: 60%;
-    width: 50%;
+    margin-top: 10px;
+    padding: 0 15px;
+  }
+  .mission__description {
+    margin-top: auto;
+    height: fit-content;
+    width: 80%;
+    font-size: 8px;
   }
 }
-@media screen and (max-width: 535px) {
-  .mission {
-    background-size: auto 100%;
+@media screen and (max-width: 415px) {
+  .mission__block {
+    border-radius: 0;
+    margin: 0;
+    height: 33%;
   }
   .mission__statement {
-    font-size: 35px;
+    font-weight: 600;
   }
-}
-@media screen and (max-width: 400px) {
-  .mission__statement {
-    font-size: 30px;
+  .mission__description {
+    border-radius: 0;
+    height: 67%;
+  }
+  .mission__description_text {
+    margin-top: auto;
   }
 }
