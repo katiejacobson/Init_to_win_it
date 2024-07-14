@@ -97,6 +97,7 @@
                 name="cause"
                 id="veterans"
                 value="veterans"
+                checked
               />
               <label for="veterans">Veterans</label>
             </div>
@@ -334,14 +335,13 @@
             type="button"
             aria-label="close"
           ></button>
-          <form class="donation-form">
+          <form class="donation-form" id= "donation-form">
             <h3 class="donation-form__heading">What will you donate?</h3>
             <div class="donation-form__label">
               <input
-                type="text"
-                id=""
                 type="email"
                 id="email"
+                type="email"
                 class="donation-form__input"
                 placeholder="Email"
                 name="email"
@@ -355,7 +355,6 @@
             <div class="donation-form__label">
               <input
                 type="text"
-                id=""
                 id="location"
                 class="donation-form__input"
                 placeholder="Where are you located?"
@@ -370,7 +369,7 @@
             <div class="donation-form__label">
               <input
                 type="text"
-                id=""
+                id="item"
                 class="donation-form__input"
                 placeholder="What will you donate?"
                 name="text"
@@ -384,7 +383,7 @@
             <div class="donation-form__label">
               <input
                 type="url"
-                id=""
+                id="image"
                 class="donation-form__input"
                 placeholder="Image URL for your donation"
                 name="link"
