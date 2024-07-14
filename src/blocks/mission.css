@@ -1,7 +1,6 @@
 .mission {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
   background-image: url(../images/mission-image.jpg);
   background-size: 100%;
