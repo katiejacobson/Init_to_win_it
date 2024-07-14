@@ -13,18 +13,18 @@
   height: 70%;
   object-fit: cover;
   margin-top: 10px;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 .donation-card__description {
   color: white;
   font-size: 20px;
   margin-top: 10px;
 }
-.donation-card__charity {
+.donation-card__location {
   color: white;
   margin-top: 10px;
 }
-.donation-card__name {
+.donation-card__email {
   color: white;
   margin-top: 10px;
 }

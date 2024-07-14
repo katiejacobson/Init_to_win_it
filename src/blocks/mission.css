@@ -3,11 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/ramon-kagie-iSwzfjgD3uU-unsplash.jpg);
+  background-image: url(../images/mission-image.jpg);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   height: 370px;
+  border-radius: 10px;
 }
 .mission__block {
   display: flex;
