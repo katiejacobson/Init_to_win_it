@@ -1,4 +1,76 @@
 .charities {
-  background-color: violet;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/nattu-adnan-atSUvc1hMwk-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  box-shadow: 2px 5px #b0ddd1;
+  border: 1px solid #aaeddf;
+  border-radius: 10px;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.charities__heading {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  opacity: 0.9;
+  color: white;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.charities__form {
+  display: flex;
+  background-color: white;
+  padding: 2px;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.charities__radio-button {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  align-items: center;
+  gap: 5px;
+  margin: 0 5px;
+}
+
+/* .charities__input {
+} */
+
+.charities__button {
+  background-image: linear-gradient(to right, #d4fbc3 5%, skyblue 95%);
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+  height: 45px;
+  width: 120px;
+  font-size: 20px;
+}
+@media screen and (max-width: 767px) {
+  .charities__form {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .charities__heading {
+    font-size: 8.5vw;
+  }
+  .charities__form {
+    flex-direction: column;
+    font-size: 6vw;
+    padding: 5px;
+  }
+  .charities__button {
+    margin-left: 0;
+  }
 }

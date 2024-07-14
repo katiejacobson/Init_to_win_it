@@ -1,0 +1,103 @@
+.donation__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.donation__popup_opened {
+  visibility: visible;
+  opacity: 1;
+}
+
+.donation__popup-window {
+  position: relative;
+  width: 600px;
+  background-color: #cce3de;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 30px;
+  border: black;
+  padding: 20px;
+  box-shadow: 15px 15px 20px black;
+}
+
+.donation-form {
+  margin: 0;
+  padding: 0;
+}
+
+.popup__close-button {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  height: 50px;
+  width: 50px;
+  z-index: 9;
+  cursor: pointer;
+  background-image: url(../images/close-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+}
+
+.donation-form__heading {
+  color: #000;
+  max-width: 320px;
+  max-height: 23px;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 20px 20px;
+  margin: 0 0 20px;
+}
+
+.donation-form__label {
+  position: relative;
+}
+
+.donation-form__input {
+  border: none;
+  margin-bottom: 15px;
+  height: 35px;
+  width: 80%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.donation-form__submit-button {
+  width: 80%;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  background-color: #000;
+  color: #fff;
+  border: solid 1px #000;
+  border-radius: 20px;
+  padding: 2px;
+  font-size: 20px;
+}
+
+.donation-form__submit-button_disabled {
+  background: #ffffff;
+  color: grey;
+  border-color: grey;
+}
+
+.donation-form__error_visible {
+  color: #ff0000;
+  font-size: 14px;
+  margin: 0 auto 12px;
+  max-width: 358px;
+}

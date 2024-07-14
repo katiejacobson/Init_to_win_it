@@ -1,4 +1,60 @@
 .mission {
-  background-color: brown;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/mission-image.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 370px;
+  border-radius: 10px;
+}
+.mission__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+  opacity: 0.8;
+  width: 710px;
+  height: 190px;
+  padding: 0 60px;
+  border-radius: 20px;
+}
+.mission__statement {
+  text-align: center;
+  font-weight: 400;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 70px;
+  color: #000;
+}
+
+@media screen and (max-width: 1000px) {
+  .mission__block {
+    width: 78%;
+    height: calc(100% - 200px);
+    padding: 0 40px;
+  }
+  .mission__statement {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .mission__block {
+    height: 60%;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 535px) {
+  .mission {
+    background-size: auto 100%;
+  }
+  .mission__statement {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mission__statement {
+    font-size: 30px;
+  }
 }

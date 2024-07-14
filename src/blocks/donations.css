@@ -1,3 +1,71 @@
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes hover {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
 .donations {
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #bceffc;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.donations__heading {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 46px;
+  font-weight: 500;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.donations__text {
+  font-size: 24px;
+  position: relative;
+  max-width: 75%;
+  text-align: center;
+  margin: 0 0 35px;
+}
+
+.donate__button {
+  height: 45px;
+  width: 160px;
+  left: 265px;
+  background-color: #000;
+  color: #fff;
+  border: solid 1px #000;
+  border-radius: 20px;
+  padding: 2px;
+  animation: pulsate 0.7s alternate-reverse infinite;
+}
+
+.donate__button:hover {
+  animation: hover 0.5s ease-in-out forwards;
+  cursor: pointer;
+}
+
+.donations__gallery {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  gap: 10px 10px;
+   
+  padding: 20px 0;
 }
