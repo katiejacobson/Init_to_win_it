@@ -11,7 +11,7 @@
   height: 70%;
   object-fit: cover;
   margin-top: 10px;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 .donation-card__description {
   color: white;
