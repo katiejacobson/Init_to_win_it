@@ -50,11 +50,15 @@ Lindsay.Capozzi. (2024, April 16). The Heat Is Turned Up: Focus on Climate Solut
 
 Nicolay, M., M. Brown, L., Johns, R., & Ialynytchev, A. (2016). A study of heat related illness preparedness in homeless veterans. International Journal of Disaster Risk Reduction, 18, 72–74. https://doi.org/10.1016/j.ijdrr.2016.05.009
 
+API: Every.org Charity API
+
 Background image provided by Vecteezy.com
 Block images provided by Unsplash.com and Pexels.com
 
 **Github Pages URL**
 https://imaniw96.github.io/Init_to_win_it/
+
+The site can be deployed locally using "npm run dev" and will be found in localhost: 8080.
 
 **To Improve**
 
