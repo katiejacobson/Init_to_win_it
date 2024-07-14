@@ -81,6 +81,10 @@
   box-shadow: 2px 3px 5px black;
   border-radius: 50%;
 }
+.about-card__logo:hover{
+  cursor: pointer;
+  color: rgb(95, 255, 255);
+}
 
 @media screen and (max-width: 1400px) {
   .about-card__name {
