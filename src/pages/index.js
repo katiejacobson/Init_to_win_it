@@ -1,17 +1,13 @@
 // IMPORTS
 import DonationCard from "../components/DonationCard.js";
 import Section from "../components/Section.js";
-
-import Donations from "../components/Donations.js";
-import "../pages/index.css";
-
 import Api from "../components/Api.js";
 import Charities from "../components/Charities.js";
 import CharityCard from "../components/CharityCard.js";
-
 import DonationsPopup from "../components/DonationsPopup.js";
 import FormValidation from "../components/FormValidator.js";
 import { donationFormValidationConfig } from "../utils/constants.js";
+import "../pages/index.css";
 
 const donateButton = document.querySelector(".donate__button");
 
