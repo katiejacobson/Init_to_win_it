@@ -23,3 +23,6 @@
   color: lightskyblue;
   text-shadow: 0.5px 0.5px 1px rgb(0, 14, 174);
 }
+.footer__link_anchor:hover {
+  color: rgb(0, 156, 156);
+}
