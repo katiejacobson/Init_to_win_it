@@ -4,7 +4,6 @@
   align-items: center;
   /* background-color: #fff; */
   padding: 20px 0 0;
-  overflow-y: auto;
 }
 
 .why__header_text {
@@ -21,6 +20,7 @@
   max-height: 100vh;
   justify-content: space-around;
   padding: 0;
+  overflow-y: auto;
 }
 
 .why__article {
@@ -93,14 +93,14 @@
 @media screen and (max-width: 767px) {
   .why {
     margin: 20px 30px;
-    padding: 20px 10px;
-    border: outset 4px #00d2d2;
-    border-radius: 10px;
   }
   .why__articles-list {
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
+    border: outset 4px #00d2d2;
+    border-radius: 10px;
+    padding: 20px 10px;
   }
   .why__article {
     width: 90%;
