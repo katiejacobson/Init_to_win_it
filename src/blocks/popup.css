@@ -46,7 +46,7 @@
   width: 50px;
   z-index: 9;
   cursor: pointer;
-  background-image: url(../images/close-icon.svg);
+  background-image: url(../images/close-icon.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-color: transparent;
@@ -100,4 +100,33 @@
   font-size: 14px;
   margin: 0 auto 12px;
   max-width: 358px;
+}
+
+@media screen and (max-width: 780px) {
+  .popup__close-button {
+    top: -65px;
+    right: 0px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .donation__popup-window {
+    width: calc(90% - 15px);
+  }
+}
+@media screen and (max-width: 420px) {
+  .popup__close-button {
+    height: 25px;
+    width: 25px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .donation__popup-window {
+    scale: 0.8;
+  }
+  .popup__close-button {
+    top: 15px;
+    right: 15px;
+    height: 30px;
+    width: 30px;
+  }
 }

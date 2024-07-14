@@ -21,6 +21,7 @@
   justify-content: space-around;
   padding: 10px 0;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .why__article {
@@ -95,7 +96,7 @@
 }
 @media screen and (max-width: 767px) {
   .why {
-    margin: 20px 30px;
+    margin: 20px 10px;
   }
   .why__articles-list {
     flex-direction: column;
