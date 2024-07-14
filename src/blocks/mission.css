@@ -28,7 +28,17 @@
   font-size: 70px;
   color: #000;
 }
-
+.mission__description {
+  display: flex;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: azure;
+  margin-top: 10px;
+  width: 1200px;
+  font-size: 20px;
+  opacity: 0.8;
+}
 @media screen and (max-width: 1000px) {
   .mission__block {
     width: 78%;
