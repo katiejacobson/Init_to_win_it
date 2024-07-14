@@ -1,32 +1,4 @@
-@keyframes hover {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
-.footer__text {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  padding-left: 15px;
-}
-
-.footer-card__name {
-  margin: 0;
-}
-
-.footer-card__image {
-  width: 150px;
-  height: 200px;
-  object-fit: cover;
-}
-
-.footer-card__logo {
-  width: 24px;
-  height: 24px;
-}
+ 
 
 .footer__link_anchor {
   text-decoration: none;
