@@ -1,12 +1,21 @@
 .page {
   display: flex;
   justify-content: center;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  background-image: url(../images/page-background.jpg);
+  padding: 50px 0 100px;
 }
 
 .page__content {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  max-width: 1600px;
   min-height: 100vh;
   margin: 0 15px;
+}
+
+section {
+  margin-top: 20px;
 }

@@ -11,51 +11,46 @@
   justify-content: center;
   padding: 0;
   visibility: hidden;
+  opacity: 0;
   display: flex;
-  /* opacity: 0.8; */
+  transition: visibility 0.5s, opacity 0.5s linear;
 }
 
 .donation__popup_opened {
   visibility: visible;
+  opacity: 1;
 }
 
 .donation__popup-window {
   position: relative;
+  width: 600px;
+  background-color: #cce3de;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 3%;
+  border: black;
+  padding: 20px;
 }
 
 .donation-form {
-  width: 600px;
-  height: 400px;
-  background-color: #fff;
-  margin: 20px auto;
-  text-align: center;
-  position: relative;
-  border-radius: 3%;
+  margin: 0;
+  padding: 0;
 }
 
 .popup__close-button {
   position: absolute;
-  bottom: calc(100% + -5px);
-  left: calc(100% + 10px);
+  top: -40px;
+  right: -40px;
   height: 50px;
   width: 50px;
   z-index: 9;
   cursor: pointer;
+  background-image: url(../images/close-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
 }
-
-/* .donate__button {
-  height: 25px;
-  width: auto;
-} */
-
-/* .donation__popup_container {
-  background-color: #fff;
-  margin: auto;
-  padding: 40px;
-  width: 500px;
-  height: 330px;
-  border-radius: 10px;
-} */
 
 .donation-form__heading {
   color: #000;
@@ -64,40 +59,44 @@
   font-size: 25px;
   font-weight: 700;
   padding: 20px 20px;
-  margin: 0;
+  margin: 0 0 20px;
+}
+
+.donation-form__label {
+  position: relative;
 }
 
 .donation-form__input {
   border: none;
+  margin-bottom: 15px;
   height: 35px;
   width: 80%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .donation-form__submit-button {
-  color: #fff;
-  background-color: black;
   width: 80%;
-  height: 75px;
-  margin: 20px 0;
-  border: none;
+  height: 45px;
+  width: 120px;
   cursor: pointer;
+  margin-bottom: 20px;
+  background-color: #000;
+  color: #fff;
+  border: solid 1px #000;
+  border-radius: 20px;
+  padding: 2px;
+  font-size: 20px;
 }
 
 .donation-form__submit-button_disabled {
-  background-color: gray;
+  background: #ffffff;
   color: #000000;
   border-color: black;
-  width: 80%;
-  height: 75px;
-  margin: 20px 0;
 }
 
 .donation-form__error_visible {
   color: #ff0000;
-  font-size: 12px;
-  /* position: absolute;
-  bottom: -28px;
-  left: 0px; */
+  font-size: 14px;
+  margin: 0 auto 12px;
   max-width: 358px;
 }

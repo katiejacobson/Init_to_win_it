@@ -1,11 +1,12 @@
 .donation-card {
-  
-  background-color: #000;
-    height: 430px;
-    width: 300px;
-    border-radius: 20px;
+  background-color: #ffffff;
+  height: 430px;
+  width: 300px;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 5px 10px #94d2d7;
+  border: 2px solid #609287;
 }
-
 
 .donation-card__image {
   width: 90%;
@@ -14,13 +15,16 @@
   margin-top: 10px;
   border-radius: 15px;
 }
-.donation-card__description{
+.donation-card__description {
   color: white;
   font-size: 20px;
+  margin-top: 10px;
 }
-.donation-card__charity{
+.donation-card__charity {
   color: white;
+  margin-top: 10px;
 }
-.donation-card__name{
+.donation-card__name {
   color: white;
+  margin-top: 10px;
 }
