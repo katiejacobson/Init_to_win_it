@@ -16,16 +16,10 @@
   margin-top: 10px;
   border-radius: 10px;
 }
-.donation-card__description {
-  color: black;
-  font-size: 20px;
-  margin-top: 10px;
-}
-.donation-card__location {
+.donation-card__text {
   color: black;
   margin-top: 10px;
-}
-.donation-card__email {
-  color: black;
-  margin-top: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }

@@ -16,7 +16,7 @@
 }
 
 .charities__heading {
-  font-family: Inter;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 48px;
   opacity: 0.9;
@@ -31,7 +31,6 @@
   background-color: white;
   padding: 2px;
   border-radius: 10px;
-  font-family: Inter;
   font-weight: 400;
   font-size: 28px;
 }

@@ -44,13 +44,13 @@
 }
 
 .charity-card__location {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.2;
   text-align: center;
 }
 
 .charitiy-card__url {
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
 }
 @media screen and (max-width: 1700px) {

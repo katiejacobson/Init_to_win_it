@@ -10,7 +10,6 @@
       <header class="header">
         <p class="header__logo">Breeze of Hope</p>
         <ul class="header__nav-items">
-          <li><a href="#mission" class="header__item">Mission Statment</a></li>
           <li><a href="#why__donate" class="header__item">Why Donate</a></li>
           <li>
             <a href="#charities" class="header__item">Charities For a Cause</a>
@@ -32,16 +31,18 @@
           
           <ul class="why__articles-list">
             <li class="why__article">
-              <h3 class="why_artical_heading">Veterans</h3>
+              <h3 class="why__article_heading">Veterans</h3>
               
               <p class="why__text">
-                <a href="https://www.sciencedirect.com/science/article/abs/pii/S2212420916300127"> Extreme heat poses serious health risks for veterans</a>
+                <a class="why__text_anchor" href="https://www.sciencedirect.com/science/article/abs/pii/S2212420916300127"> Extreme heat poses serious health risks for veterans</a>
               </p>
+              <div class="why-card__image-wrapper">
               <img
               class="why-card__image"
               src="<%=require('./images/veterans.jpg')%>"
               alt="image of Homeless man"
             />
+          </div>
               <p class="why__paragraph">Veterans are more likely to be homeless upon returning
                  from oversea duties due to increased rates of extreme poverty, psychiatric disorders, 
                  and social isolation. Extreme poverty is defined by the United Nations as
@@ -51,19 +52,20 @@
             <article class="why__article">
             </li>
             <li class="why__article">
-              <h4 class="why_artical_heading">Homeless</h4>
+              <h3 class="why__article_heading">Homeless</h3>
               <p class="why__text">
-                <a href="https://global.chinadaily.com.cn/a/202406/26/WS667bc4b2a31095c51c50afb3.html">
+                <a class="why__text_anchor" href="https://global.chinadaily.com.cn/a/202406/26/WS667bc4b2a31095c51c50afb3.html">
                 Extreme heat can be deadly for the homeless, leading to
                 dehydration and heatstroke.
                 </a>
               </p>
-              <h4 class="why_artical_heading"></h4>
-              <img
+              <div class="why-card__image-wrapper">
+                <img
               class="why-card__image"
               src="<%=require('./images/homeless.jpg')%>"
               alt="image of Homeless man"
             />
+              </div>
             <p class="why__paragraph">NEW YORK - The intense heat wave that recently shattered 
               temperature records across the United States is subsiding this week in parts of the country, 
               temporarily bringing relief to Americans. However, 
@@ -72,19 +74,20 @@
             <article class="why__article">
             </li>
             <li class="why__article">
-              <h5 class="why_artical_heading">Kids</h5>
+              <h3 class="why__article_heading">Kids</h3>
               <p class="why__text">
-                <a href="https://policylab.chop.edu/blog/heat-turned-focus-climate-solutions-kids">
+                <a class="why__text_anchor" href="https://policylab.chop.edu/blog/heat-turned-focus-climate-solutions-kids">
                 Extreme heat can disrupt outdoor activities and educational
                 programs vital for youth development.
                 </a>
-              </p>
-              <h5 class="why_artical_heading"></h5>
+              </p>        
+              <div class="why-card__image-wrapper">
               <img
               class="why-card__image"
               src="<%=require('./images/kids.jpg')%>"
               alt="image of kids"
             />
+            </div>
             <p class="why__paragraph">Extreme heat is a significant threat to the health of children, 
               and we must consider a holistic and multi-faceted approach when crafting solutions. Clinicians
                are well-positioned to serve as advocates in this space given our unique lens into the multitude 
@@ -134,7 +137,7 @@
           <div class="charities__container" id="charities-container">
             <template id="charity-card-template">
               <li class="card charity-card">
-                <h2 class="charity-card__name"></h2>
+                <h3 class="charity-card__name"></h3>
                 <p class="charity-card__location"></p>
              
                 <a href="" class="charity-card__url" target="_blank"
@@ -161,9 +164,9 @@
             <template id="donation-card__template">
               <li class="card donation-card">
                 <img src="" alt="" class="donation-card__image" />
-                <p class="donation-card__email"></p>
-                <p class="donation-card__location"></p>
-                <p class="donation-card__description"></p>
+                <p class="donation-card__text donation-card__email"></p>
+                <p class="donation-card__text donation-card__location"></p>
+                <p class="donation-card__text donation-card__description"></p>
                 
               </li>
             </template>
@@ -176,7 +179,7 @@
           <div class="about__container">
             <ul class="about-card__list">
               <li class="about-card">
-                <h2 class="about-card__name">Bree Massingill</h2>
+                <h3 class="about-card__name">Bree Massingill</h3>
                 <div class="about__member">
                   <div class="about__image-wrapper">
                     <img
@@ -211,7 +214,7 @@
                 </div>
               </li>
               <li class="about-card">
-                <h2 class="about-card__name">Imani Walker</h2>
+                <h3 class="about-card__name">Imani Walker</h3>
                 <div class="about__member">
                   <div class="about__image-wrapper">
                     <img
@@ -245,7 +248,7 @@
                 </div>
               </li>
               <li class="about-card">
-                <h2 class="about-card__name">Katie Jacobson</h2>
+                <h3 class="about-card__name">Katie Jacobson</h3>
                 <div class="about__member">
                   <div class="about__image-wrapper">
                     <img
@@ -279,7 +282,7 @@
                 </div>
               </li>
               <li class="about-card">
-                <h2 class="about-card__name">Jacob Reyes</h2>
+                <h3 class="about-card__name">Jacob Reyes</h3>
                 <div class="about__member">
                   <div class="about__image-wrapper">
                     <img
@@ -320,15 +323,18 @@
         <p class="footer__text">&#64; 2024 Init to Win It</p>
         <p class="footer__link">
           Background image provided by
-          <a
+          <a class="footer__link_anchor"
             href="https://www.vecteezy.com/?utm_source=vecteezy-download&utm_medium=license-info-pdf&utm_campaign=license-info-document"
             >Vecteezy.com</a
           >
         </p>
         <p class="footer__link">
           Block images provided by
-          <a href="https://unsplash.com/">Unsplash.com</a>
+          <a class="footer__link_anchor" href="https://unsplash.com/">Unsplash.com</a>
         </p>
+        <p class="footer__link">
+          Article images provided by
+          <a class="footer__link_anchor" href="https://revealnews.org">Revealnews.org</a>, <a class="footer__link_anchor" href="https://www.shutterstock.com/">Shutterstock.com</a>, and <a class="footer__link_anchor" href="https://www.cohousing.org/">Cohousing.org</a></p>
       </footer>
 
       <!-- Donation Popup Form-->

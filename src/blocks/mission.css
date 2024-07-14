@@ -17,14 +17,14 @@
   background-color: azure;
   opacity: 0.8;
   width: 710px;
-  height: 170px;
+  height: 190px;
   padding: 0 60px;
   border-radius: 20px;
 }
 .mission__statement {
   text-align: center;
   font-weight: 400;
-  font-family: Inter;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 70px;
   color: #000;
 }

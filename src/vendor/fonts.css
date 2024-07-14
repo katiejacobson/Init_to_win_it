@@ -20,3 +20,11 @@
   font-display: swap;
   src: url(./fonts/Inter-Black.woff2) format("woff2");
 }
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./fonts/Raleway-Medium.ttf) format("truetype");
+}
