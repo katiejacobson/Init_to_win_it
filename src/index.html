@@ -26,9 +26,6 @@
               We Believe in helping those in need
             </h1>
           </div>
-          <!-- <div class="mission__block_text">
-          <h2 class="mission__text">Our mission is to beat the heat by providing essential support and resources to vulnerable communities during times of extreme temperatures. Through compassionate outreach, we aim to ensure the safety, well-being, and comfort of all individuals, empowering them to thrive even in the hottest of conditions."</h2>
-          </div> -->
         </section>
         <section class="why">
           <h2 class="why__header_text" id="why__donate">Why Donate?</h2>
@@ -43,6 +40,13 @@
                 Extreme heat poses serious health risks for veterans, especially
                 those with existing health conditions.
               </p>
+              <p class="why__paragraph">Veterans are more likely to be homeless upon returning
+                 from oversea duties due to increased rates of extreme poverty, psychiatric disorders, 
+                 and social isolation. Extreme poverty is defined by the United Nations as
+                  “a condition characterized by severe deprivation of basic human needs, 
+                including food, safe drinking water, sanitation facilities, health, shelter, education and information.” </p>
+            </article>
+            <article class="why__article">
             </li>
             <li class="why__article">
               <h4 class="why_artical_heading">Homeless</h4>
@@ -50,6 +54,18 @@
                 Extreme heat can be deadly for the homeless, leading to
                 dehydration and heatstroke.
               </p>
+              <h4 class="why_artical_heading"></h4>
+              <img
+              class="why-card__image"
+              src="<%=require('./images/homeless.jpg')%>"
+              alt="image of Homeless man"
+            />
+            <p class="why__paragraph">NEW YORK - The intense heat wave that recently shattered 
+              temperature records across the United States is subsiding this week in parts of the country, 
+              temporarily bringing relief to Americans. However, 
+              it continues to disproportionately affect the homeless, who have far fewer means to escape the searing weather.</p>
+            </article>
+            <article class="why__article">
             </li>
             <li class="why__article">
               <h5 class="why_artical_heading">Kids</h5>
@@ -57,6 +73,17 @@
                 Extreme heat can disrupt outdoor activities and educational
                 programs vital for youth development.
               </p>
+              <h5 class="why_artical_heading"></h5>
+              <img
+              class="why-card__image"
+              src="<%=require('./images/kids.jpg')%>"
+              alt="image of kids"
+            />
+            <p class="why__paragraph">Extreme heat is a significant threat to the health of children, 
+              and we must consider a holistic and multi-faceted approach when crafting solutions. Clinicians
+               are well-positioned to serve as advocates in this space given our unique lens into the multitude 
+              of ways that the environment impacts children's health. The heat is up and the time to act is now.</p>
+            </article>
             </li>
           </ul>
         </section>
@@ -65,18 +92,17 @@
           <form class="charities__form" id="charities-form" novalidate>
             <div class="charities__radio-button">
               <input
-                class="charities__input"
+                class="charities__radio-button-choice"
                 type="radio"
                 name="cause"
                 id="veterans"
                 value="veterans"
-                checked
               />
               <label for="veterans">Veterans</label>
             </div>
             <div class="charities__radio-button">
               <input
-                class="charities__input"
+                class="charities__radio-button-choice"
                 type="radio"
                 name="cause"
                 id="housing"
@@ -86,7 +112,7 @@
             </div>
             <div class="charities__radio-button">
               <input
-                class="charities__input"
+                class="charities__radio-button-choice"
                 type="radio"
                 name="cause"
                 id="youth"
@@ -95,11 +121,8 @@
               <label for="youth">Youth</label>
             </div>
             <button class="charities__button" type="submit" aria-label="submit">
-              Search</button
-            ><span
-              class="charities-form__error"
-              id="charities-form-error"
-            ></span>
+              Check
+            </button>
           </form>
           <div class="charities__container" id="charities-container">
             <template id="charity-card-template">
@@ -113,6 +136,7 @@
               </li>
             </template>
           </div>
+          <button class=".charities__button"></button>
         </section>
 
         <!-- Donation Section-->
@@ -310,10 +334,12 @@
             type="button"
             aria-label="close"
           ></button>
-          <form class="donation-form" id="donation-form">
+          <form class="donation-form">
             <h3 class="donation-form__heading">What will you donate?</h3>
             <div class="donation-form__label">
               <input
+                type="text"
+                id=""
                 type="email"
                 id="email"
                 class="donation-form__input"
@@ -329,6 +355,7 @@
             <div class="donation-form__label">
               <input
                 type="text"
+                id=""
                 id="location"
                 class="donation-form__input"
                 placeholder="Where are you located?"
@@ -343,7 +370,7 @@
             <div class="donation-form__label">
               <input
                 type="text"
-                id="item"
+                id=""
                 class="donation-form__input"
                 placeholder="What will you donate?"
                 name="text"
@@ -357,7 +384,7 @@
             <div class="donation-form__label">
               <input
                 type="url"
-                id="image"
+                id=""
                 class="donation-form__input"
                 placeholder="Image URL for your donation"
                 name="link"

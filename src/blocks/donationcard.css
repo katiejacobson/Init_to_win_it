@@ -1,10 +1,11 @@
 .donation-card {
-  background-color: #000;
+  background-color: #ffffff;
   height: 430px;
   width: 300px;
   border-radius: 20px;
   padding: 10px;
-  text-align: center;
+  box-shadow: 5px 10px #94d2d7;
+  border: 2px solid #609287;
 }
 
 .donation-card__image {
